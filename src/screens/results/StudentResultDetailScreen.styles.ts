@@ -1,0 +1,2 @@
+import {StyleSheet} from 'react-native';import {C} from '../../theme';
+export const styles=StyleSheet.create({profile:{alignItems:'center',gap:5},avatar:{width:68,height:68,borderRadius:34,backgroundColor:C.blueSoft,alignItems:'center',justifyContent:'center',marginBottom:3},scoreGrid:{flexDirection:'row',gap:8},scoreCard:{flex:1,alignItems:'center',gap:2},detailCard:{gap:0},row:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',paddingVertical:9,borderBottomWidth:1,borderBottomColor:C.border},remarks:{gap:6}});

@@ -1,0 +1,2 @@
+import {StyleSheet} from 'react-native';import {C} from '../../theme';
+export const styles=StyleSheet.create({profileCard:{alignItems:'center',gap:5},avatar:{width:92,height:92,borderRadius:25,backgroundColor:C.blueSoft,marginBottom:5},menuRow:{minHeight:54,flexDirection:'row',alignItems:'center',gap:11,paddingHorizontal:8,borderBottomWidth:1,borderBottomColor:C.border},menuIcon:{width:34,height:34,borderRadius:10,alignItems:'center',justifyContent:'center'},menuLabel:{flex:1},languageCard:{gap:10},languageRow:{flexDirection:'row',gap:8},langButton:{flex:1}});

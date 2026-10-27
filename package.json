@@ -1,0 +1,41 @@
+{
+  "name": "greenwood-teacher-app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo/AppEntry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "verify:syntax": "node scripts/check-syntax.js",
+    "verify:routes": "node scripts/check-routes.js",
+    "verify:i18n": "node scripts/check-translations.js",
+    "verify:data": "node scripts/check-data.js",
+    "verify": "npm run verify:syntax && npm run verify:imports && npm run verify:routes && npm run verify:i18n && npm run verify:data && npm run verify:logic && npm run verify:scanner && npm run verify:config && npm run typecheck",
+    "config:check": "npx expo config --type public",
+    "config:apply": "node scripts/apply-school-config.js",
+    "verify:logic": "node scripts/check-logic.js",
+    "verify:scanner": "node scripts/check-scanner.js",
+    "verify:imports": "node scripts/check-imports.js",
+    "verify:config": "node scripts/check-config.js",
+    "start:expo-go": "expo start",
+    "prebuild": "expo prebuild"
+  },
+  "dependencies": {
+    "expo": "~57.0.31",
+    "expo-camera": "~57.0.3",
+    "expo-file-system": "~57.0.7",
+    "expo-image-manipulator": "~57.0.17",
+    "expo-print": "~57.0.2",
+    "expo-sharing": "~57.0.24",
+    "react": "19.2.3",
+    "react-native": "0.86.0",
+    "expo-image-picker": "~57.0.20",
+    "react-native-document-scanner-plugin": "2.0.4"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.3",
+    "typescript": "~5.9.3"
+  }
+}

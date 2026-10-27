@@ -1,0 +1,107 @@
+{
+  "app": {
+    "name": "Greenwood International School",
+    "version": "1.0.0",
+    "demoMode": true,
+    "appName": "Greenwood Teacher",
+    "appSlug": "greenwood-international-school-teacher",
+    "androidPackage": "com.greenwoodinternational.teacher",
+    "iosBundleIdentifier": "com.greenwoodinternational.teacher",
+    "defaultAcademicYear": "2026-27",
+    "availableAcademicYears": [
+      "2026-27",
+      "2025-26",
+      "2024-25",
+      "2023-24"
+    ]
+  },
+  "school": {
+    "id": "greenwood-demo",
+    "name": "Greenwood International School",
+    "tagline": "Learn · Grow · Succeed",
+    "heroPhotoUrl": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=85",
+    "logoEmoji": "✦",
+    "established": 2010,
+    "address": "RathYatra Road, Varanasi, Uttar Pradesh, India",
+    "shortLocation": "Varanasi, Uttar Pradesh",
+    "phone": "+91 542 400 2000",
+    "email": "hello@greenwood-demo.edu",
+    "website": "https://example.org/greenwood-demo",
+    "grades": "Nursery – Class 12",
+    "about": "Greenwood International School encourages curiosity, kindness and independent thinking. Our learning environment combines strong academic foundations with arts, sports, technology and a supportive school community.",
+    "mission": "To nurture confident, compassionate learners who are ready to contribute to their communities.",
+    "photos": [
+      "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=85"
+    ],
+    "videos": [
+      {
+        "id": "v1",
+        "title": "A day at Greenwood",
+        "duration": "2:18",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85",
+        "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+      },
+      {
+        "id": "v2",
+        "title": "Campus and facilities tour",
+        "duration": "3:42",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=85",
+        "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+      },
+      {
+        "id": "v3",
+        "title": "Annual cultural showcase",
+        "duration": "4:05",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=85",
+        "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+      }
+    ],
+    "facilities": [
+      "Science and computer labs",
+      "Library and reading corner",
+      "Indoor and outdoor sports",
+      "Music and art studios",
+      "School transport",
+      "Counselling and student support"
+    ],
+    "theme": {
+      "primary": "#075DCE",
+      "primaryDark": "#073C88",
+      "accent": "#20A4F3",
+      "success": "#18A66A",
+      "danger": "#E34D59",
+      "warning": "#E99B25",
+      "background": "#F4F7FC",
+      "surface": "#FFFFFF",
+      "text": "#16233A",
+      "muted": "#687892",
+      "border": "#E3EAF3",
+      "purple": "#7456D8",
+      "orange": "#E98A34",
+      "successSoft": "#E7F8EF",
+      "dangerSoft": "#FFF0F0",
+      "warningSoft": "#FFF6E8",
+      "blueSoft": "#EAF3FF",
+      "purpleSoft": "#F1ECFF",
+      "orangeSoft": "#FFF0E5"
+    },
+    "taglineHi": "सीखें · बढ़ें · सफल हों",
+    "shortLocationHi": "वाराणसी, उत्तर प्रदेश",
+    "aboutHi": "ग्रीनवुड इंटरनेशनल स्कूल जिज्ञासा, दयालुता और स्वतंत्र सोच को प्रोत्साहित करता है। हमारा शिक्षण वातावरण मजबूत शैक्षणिक आधार के साथ कला, खेल, तकनीक और सहयोगपूर्ण स्कूल समुदाय को जोड़ता है।",
+    "missionHi": "आत्मविश्वासी और संवेदनशील विद्यार्थियों को तैयार करना, जो अपने समुदाय में सकारात्मक योगदान दें।",
+    "gradesHi": "नर्सरी – कक्षा 12",
+    "facilitiesHi": [
+      "विज्ञान और कंप्यूटर लैब",
+      "पुस्तकालय और रीडिंग कॉर्नर",
+      "इनडोर और आउटडोर खेल",
+      "संगीत और कला स्टूडियो",
+      "स्कूल परिवहन",
+      "काउंसलिंग और विद्यार्थी सहायता"
+    ]
+  }
+}

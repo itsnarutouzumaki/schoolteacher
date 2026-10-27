@@ -1,0 +1,2 @@
+import {StyleSheet} from 'react-native';import {C} from '../../theme';
+export const styles=StyleSheet.create({question:{minHeight:52,flexDirection:'row',alignItems:'center',gap:9,paddingHorizontal:12},qIcon:{width:29,height:29,borderRadius:9,backgroundColor:C.blueSoft,alignItems:'center',justifyContent:'center'},questionText:{flex:1},answer:{paddingHorizontal:13,paddingBottom:13,paddingLeft:50},contact:{gap:4,backgroundColor:'#F9FBFE'}});

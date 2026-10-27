@@ -1,0 +1,3536 @@
+{
+  "teacher": {
+    "id": "t-priya",
+    "name": "Priya Sharma",
+    "photoUrl": "https://i.pravatar.cc/240?img=47",
+    "designation": "Mathematics Teacher",
+    "subjects": [
+      "Mathematics"
+    ],
+    "highestDegree": "M.Sc. Mathematics",
+    "qualifications": [
+      {
+        "degree": "M.Sc. Mathematics",
+        "institution": "Banaras Hindu University",
+        "year": "2016"
+      },
+      {
+        "degree": "B.Ed.",
+        "institution": "University of Allahabad",
+        "year": "2018"
+      }
+    ],
+    "experienceYears": 9,
+    "specialization": "Middle-school mathematics and problem-solving",
+    "about": "I enjoy helping students build confidence with mathematical concepts through examples, practice and patient guidance.",
+    "email": "priya.sharma@greenwood-demo.edu",
+    "phone": "+91 98765 43210",
+    "address": "Varanasi, Uttar Pradesh",
+    "classes": [
+      "Class 5",
+      "Class 6",
+      "Class 7"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "awards": [
+      "Innovative Teaching Practice Award · 2024"
+    ],
+    "officeHours": "Monday–Friday · 2:30–3:30 PM",
+    "designationHi": "गणित शिक्षक",
+    "aboutHi": "उदाहरणों, अभ्यास और धैर्यपूर्ण मार्गदर्शन से विद्यार्थियों का गणित में आत्मविश्वास बढ़ाना मुझे अच्छा लगता है।",
+    "specializationHi": "मिडिल स्कूल गणित और समस्या-समाधान"
+  },
+  "teachers": [
+    {
+      "id": "t-priya",
+      "name": "Priya Sharma",
+      "photoUrl": "https://i.pravatar.cc/240?img=47",
+      "designation": "Mathematics Teacher",
+      "subjects": [
+        "Mathematics"
+      ],
+      "highestDegree": "M.Sc. Mathematics",
+      "qualifications": [
+        {
+          "degree": "M.Sc. Mathematics",
+          "institution": "Banaras Hindu University",
+          "year": "2016"
+        },
+        {
+          "degree": "B.Ed.",
+          "institution": "University of Allahabad",
+          "year": "2018"
+        }
+      ],
+      "experienceYears": 9,
+      "specialization": "Middle-school mathematics and problem-solving",
+      "about": "I enjoy helping students build confidence with mathematical concepts through examples, practice and patient guidance.",
+      "email": "priya.sharma@greenwood-demo.edu",
+      "phone": "+91 98765 43210",
+      "address": "Varanasi, Uttar Pradesh",
+      "classes": [
+        "Class 5",
+        "Class 6",
+        "Class 7"
+      ],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "awards": [
+        "Innovative Teaching Practice Award · 2024"
+      ],
+      "officeHours": "Monday–Friday · 2:30–3:30 PM",
+      "designationHi": "गणित शिक्षक",
+      "aboutHi": "उदाहरणों, अभ्यास और धैर्यपूर्ण मार्गदर्शन से विद्यार्थियों का गणित में आत्मविश्वास बढ़ाना मुझे अच्छा लगता है।",
+      "specializationHi": "मिडिल स्कूल गणित और समस्या-समाधान"
+    },
+    {
+      "id": "t-amit",
+      "name": "Amit Verma",
+      "photoUrl": "https://i.pravatar.cc/240?img=12",
+      "designation": "Science Teacher",
+      "subjects": [
+        "Science"
+      ],
+      "highestDegree": "M.Sc. Physics",
+      "qualifications": [
+        {
+          "degree": "M.Sc. Physics",
+          "institution": "BHU",
+          "year": "2017"
+        },
+        {
+          "degree": "B.Ed.",
+          "institution": "MGKVP",
+          "year": "2019"
+        }
+      ],
+      "experienceYears": 7,
+      "specialization": "Experiential science learning",
+      "about": "Helping students explore science through observation, experiments and questions.",
+      "email": "amit.verma@greenwood-demo.edu",
+      "phone": "+91 98765 43211",
+      "address": "Varanasi, Uttar Pradesh",
+      "classes": [
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8"
+      ],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "awards": [
+        "Science Fair Mentor · 2023"
+      ],
+      "officeHours": "Tuesday–Friday · 1:30–2:00 PM",
+      "designationHi": "विज्ञान शिक्षक",
+      "aboutHi": "अवलोकन, प्रयोग और प्रश्नों के माध्यम से विद्यार्थियों को विज्ञान समझने में मदद करना।",
+      "specializationHi": "अनुभव-आधारित विज्ञान शिक्षण"
+    },
+    {
+      "id": "t-neha",
+      "name": "Neha Gupta",
+      "photoUrl": "https://i.pravatar.cc/240?img=44",
+      "designation": "English Teacher",
+      "subjects": [
+        "English"
+      ],
+      "highestDegree": "M.A. English",
+      "qualifications": [
+        {
+          "degree": "M.A. English",
+          "institution": "University of Delhi",
+          "year": "2015"
+        },
+        {
+          "degree": "B.Ed.",
+          "institution": "BHU",
+          "year": "2017"
+        }
+      ],
+      "experienceYears": 11,
+      "specialization": "Reading comprehension and creative writing",
+      "about": "Building confident readers, thoughtful writers and clear communicators.",
+      "email": "neha.gupta@greenwood-demo.edu",
+      "phone": "+91 98765 43212",
+      "address": "Varanasi, Uttar Pradesh",
+      "classes": [
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8"
+      ],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "awards": [
+        "Language Educator Recognition · 2022"
+      ],
+      "officeHours": "Monday–Thursday · 2:00–2:30 PM",
+      "designationHi": "अंग्रेज़ी शिक्षक",
+      "aboutHi": "आत्मविश्वास से पढ़ने वाले, विचारशील लेखक और स्पष्ट संवादक तैयार करना।",
+      "specializationHi": "पठन-बोध और रचनात्मक लेखन"
+    }
+  ],
+  "classes": [
+    {
+      "className": "Class 5",
+      "section": "A",
+      "label": "Class 5 · Section A"
+    },
+    {
+      "className": "Class 5",
+      "section": "B",
+      "label": "Class 5 · Section B"
+    },
+    {
+      "className": "Class 6",
+      "section": "A",
+      "label": "Class 6 · Section A"
+    },
+    {
+      "className": "Class 6",
+      "section": "B",
+      "label": "Class 6 · Section B"
+    },
+    {
+      "className": "Class 7",
+      "section": "A",
+      "label": "Class 7 · Section A"
+    },
+    {
+      "className": "Class 7",
+      "section": "B",
+      "label": "Class 7 · Section B"
+    },
+    {
+      "className": "Class 8",
+      "section": "A",
+      "label": "Class 8 · Section A"
+    },
+    {
+      "className": "Class 8",
+      "section": "B",
+      "label": "Class 8 · Section B"
+    }
+  ],
+  "studentsByClass": {
+    "Class 5|A": [
+      {
+        "id": "s-001",
+        "rollNumber": 1,
+        "fullName": "Aarav Gupta",
+        "fatherName": "Suresh Das",
+        "studentId": "GIS2026-5A-0001",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=2",
+        "gender": "Female"
+      },
+      {
+        "id": "s-002",
+        "rollNumber": 2,
+        "fullName": "Rohan Das",
+        "fatherName": "Deepak Dubey",
+        "studentId": "GIS2026-5A-0002",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=3",
+        "gender": "Female"
+      },
+      {
+        "id": "s-003",
+        "rollNumber": 3,
+        "fullName": "Vihaan Srivastava",
+        "fatherName": "Vikram Gupta",
+        "studentId": "GIS2026-5A-0003",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=4",
+        "gender": "Female"
+      },
+      {
+        "id": "s-004",
+        "rollNumber": 4,
+        "fullName": "Advait Pandey",
+        "fatherName": "Pradeep Agarwal",
+        "studentId": "GIS2026-5A-0004",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=5",
+        "gender": "Female"
+      },
+      {
+        "id": "s-005",
+        "rollNumber": 5,
+        "fullName": "Arjun Gupta",
+        "fatherName": "Sanjay Pandey",
+        "studentId": "GIS2026-5A-0005",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=6",
+        "gender": "Female"
+      },
+      {
+        "id": "s-006",
+        "rollNumber": 6,
+        "fullName": "Kabir Das",
+        "fatherName": "Ashish Mishra",
+        "studentId": "GIS2026-5A-0006",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=7",
+        "gender": "Female"
+      },
+      {
+        "id": "s-007",
+        "rollNumber": 7,
+        "fullName": "Reyansh Srivastava",
+        "fatherName": "Dinesh Srivastava",
+        "studentId": "GIS2026-5A-0007",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=8",
+        "gender": "Female"
+      },
+      {
+        "id": "s-008",
+        "rollNumber": 8,
+        "fullName": "Krishna Pandey",
+        "fatherName": "Gaurav Singh",
+        "studentId": "GIS2026-5A-0008",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=9",
+        "gender": "Female"
+      },
+      {
+        "id": "s-009",
+        "rollNumber": 9,
+        "fullName": "Ayaan Gupta",
+        "fatherName": "Suresh Das",
+        "studentId": "GIS2026-5A-0009",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=10",
+        "gender": "Female"
+      },
+      {
+        "id": "s-010",
+        "rollNumber": 10,
+        "fullName": "Dev Das",
+        "fatherName": "Deepak Dubey",
+        "studentId": "GIS2026-5A-0010",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=11",
+        "gender": "Female"
+      },
+      {
+        "id": "s-011",
+        "rollNumber": 11,
+        "fullName": "Vivaan Srivastava",
+        "fatherName": "Vikram Gupta",
+        "studentId": "GIS2026-5A-0011",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=12",
+        "gender": "Female"
+      },
+      {
+        "id": "s-012",
+        "rollNumber": 12,
+        "fullName": "Yash Pandey",
+        "fatherName": "Pradeep Agarwal",
+        "studentId": "GIS2026-5A-0012",
+        "className": "Class 5",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=13",
+        "gender": "Female"
+      }
+    ],
+    "Class 5|B": [
+      {
+        "id": "s-013",
+        "rollNumber": 1,
+        "fullName": "Reyansh Das",
+        "fatherName": "Dinesh Gupta",
+        "studentId": "GIS2026-5B-0013",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=14",
+        "gender": "Female"
+      },
+      {
+        "id": "s-014",
+        "rollNumber": 2,
+        "fullName": "Krishna Srivastava",
+        "fatherName": "Gaurav Agarwal",
+        "studentId": "GIS2026-5B-0014",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=15",
+        "gender": "Female"
+      },
+      {
+        "id": "s-015",
+        "rollNumber": 3,
+        "fullName": "Ayaan Pandey",
+        "fatherName": "Suresh Pandey",
+        "studentId": "GIS2026-5B-0015",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=16",
+        "gender": "Female"
+      },
+      {
+        "id": "s-016",
+        "rollNumber": 4,
+        "fullName": "Dev Gupta",
+        "fatherName": "Deepak Mishra",
+        "studentId": "GIS2026-5B-0016",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=17",
+        "gender": "Female"
+      },
+      {
+        "id": "s-017",
+        "rollNumber": 5,
+        "fullName": "Vivaan Das",
+        "fatherName": "Vikram Srivastava",
+        "studentId": "GIS2026-5B-0017",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=18",
+        "gender": "Female"
+      },
+      {
+        "id": "s-018",
+        "rollNumber": 6,
+        "fullName": "Yash Srivastava",
+        "fatherName": "Pradeep Singh",
+        "studentId": "GIS2026-5B-0018",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=19",
+        "gender": "Female"
+      },
+      {
+        "id": "s-019",
+        "rollNumber": 7,
+        "fullName": "Dhruv Pandey",
+        "fatherName": "Sanjay Das",
+        "studentId": "GIS2026-5B-0019",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=20",
+        "gender": "Female"
+      },
+      {
+        "id": "s-020",
+        "rollNumber": 8,
+        "fullName": "Aditya Gupta",
+        "fatherName": "Ashish Dubey",
+        "studentId": "GIS2026-5B-0020",
+        "className": "Class 5",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=21",
+        "gender": "Female"
+      }
+    ],
+    "Class 6|A": [
+      {
+        "id": "s-021",
+        "rollNumber": 1,
+        "fullName": "Vivaan Pandey",
+        "fatherName": "Vikram Srivastava",
+        "studentId": "GIS2026-6A-0021",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=22",
+        "gender": "Female"
+      },
+      {
+        "id": "s-022",
+        "rollNumber": 2,
+        "fullName": "Yash Gupta",
+        "fatherName": "Pradeep Singh",
+        "studentId": "GIS2026-6A-0022",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=23",
+        "gender": "Female"
+      },
+      {
+        "id": "s-023",
+        "rollNumber": 3,
+        "fullName": "Dhruv Das",
+        "fatherName": "Sanjay Das",
+        "studentId": "GIS2026-6A-0023",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=24",
+        "gender": "Female"
+      },
+      {
+        "id": "s-024",
+        "rollNumber": 4,
+        "fullName": "Aditya Srivastava",
+        "fatherName": "Ashish Dubey",
+        "studentId": "GIS2026-6A-0024",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=25",
+        "gender": "Female"
+      },
+      {
+        "id": "s-025",
+        "rollNumber": 5,
+        "fullName": "Shaurya Pandey",
+        "fatherName": "Dinesh Gupta",
+        "studentId": "GIS2026-6A-0025",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=26",
+        "gender": "Female"
+      },
+      {
+        "id": "s-026",
+        "rollNumber": 6,
+        "fullName": "Neil Gupta",
+        "fatherName": "Gaurav Agarwal",
+        "studentId": "GIS2026-6A-0026",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=27",
+        "gender": "Female"
+      },
+      {
+        "id": "s-027",
+        "rollNumber": 7,
+        "fullName": "Aarav Das",
+        "fatherName": "Suresh Pandey",
+        "studentId": "GIS2026-6A-0027",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=28",
+        "gender": "Female"
+      },
+      {
+        "id": "s-028",
+        "rollNumber": 8,
+        "fullName": "Rohan Srivastava",
+        "fatherName": "Deepak Mishra",
+        "studentId": "GIS2026-6A-0028",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=29",
+        "gender": "Female"
+      },
+      {
+        "id": "s-029",
+        "rollNumber": 9,
+        "fullName": "Vihaan Pandey",
+        "fatherName": "Vikram Srivastava",
+        "studentId": "GIS2026-6A-0029",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=30",
+        "gender": "Female"
+      },
+      {
+        "id": "s-030",
+        "rollNumber": 10,
+        "fullName": "Advait Gupta",
+        "fatherName": "Pradeep Singh",
+        "studentId": "GIS2026-6A-0030",
+        "className": "Class 6",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=31",
+        "gender": "Female"
+      }
+    ],
+    "Class 6|B": [
+      {
+        "id": "s-031",
+        "rollNumber": 1,
+        "fullName": "Neil Dubey",
+        "fatherName": "Gaurav Dubey",
+        "studentId": "GIS2026-6B-0031",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=32",
+        "gender": "Female"
+      },
+      {
+        "id": "s-032",
+        "rollNumber": 2,
+        "fullName": "Aarav Singh",
+        "fatherName": "Suresh Gupta",
+        "studentId": "GIS2026-6B-0032",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=33",
+        "gender": "Female"
+      },
+      {
+        "id": "s-033",
+        "rollNumber": 3,
+        "fullName": "Rohan Mishra",
+        "fatherName": "Deepak Agarwal",
+        "studentId": "GIS2026-6B-0033",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=34",
+        "gender": "Female"
+      },
+      {
+        "id": "s-034",
+        "rollNumber": 4,
+        "fullName": "Vihaan Agarwal",
+        "fatherName": "Vikram Pandey",
+        "studentId": "GIS2026-6B-0034",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=35",
+        "gender": "Female"
+      },
+      {
+        "id": "s-035",
+        "rollNumber": 5,
+        "fullName": "Advait Dubey",
+        "fatherName": "Pradeep Mishra",
+        "studentId": "GIS2026-6B-0035",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=36",
+        "gender": "Female"
+      },
+      {
+        "id": "s-036",
+        "rollNumber": 6,
+        "fullName": "Arjun Singh",
+        "fatherName": "Sanjay Srivastava",
+        "studentId": "GIS2026-6B-0036",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=37",
+        "gender": "Female"
+      },
+      {
+        "id": "s-037",
+        "rollNumber": 7,
+        "fullName": "Kabir Mishra",
+        "fatherName": "Ashish Singh",
+        "studentId": "GIS2026-6B-0037",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=38",
+        "gender": "Female"
+      },
+      {
+        "id": "s-038",
+        "rollNumber": 8,
+        "fullName": "Reyansh Agarwal",
+        "fatherName": "Dinesh Das",
+        "studentId": "GIS2026-6B-0038",
+        "className": "Class 6",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=39",
+        "gender": "Female"
+      }
+    ],
+    "Class 7|A": [
+      {
+        "id": "s-039",
+        "rollNumber": 1,
+        "fullName": "Advait Mishra",
+        "fatherName": "Pradeep Mishra",
+        "studentId": "GIS2026-7A-0039",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=40",
+        "gender": "Female"
+      },
+      {
+        "id": "s-040",
+        "rollNumber": 2,
+        "fullName": "Arjun Agarwal",
+        "fatherName": "Sanjay Srivastava",
+        "studentId": "GIS2026-7A-0040",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=41",
+        "gender": "Female"
+      },
+      {
+        "id": "s-041",
+        "rollNumber": 3,
+        "fullName": "Kabir Dubey",
+        "fatherName": "Ashish Singh",
+        "studentId": "GIS2026-7A-0041",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=42",
+        "gender": "Female"
+      },
+      {
+        "id": "s-042",
+        "rollNumber": 4,
+        "fullName": "Reyansh Singh",
+        "fatherName": "Dinesh Das",
+        "studentId": "GIS2026-7A-0042",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=43",
+        "gender": "Female"
+      },
+      {
+        "id": "s-043",
+        "rollNumber": 5,
+        "fullName": "Krishna Mishra",
+        "fatherName": "Gaurav Dubey",
+        "studentId": "GIS2026-7A-0043",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=44",
+        "gender": "Female"
+      },
+      {
+        "id": "s-044",
+        "rollNumber": 6,
+        "fullName": "Ayaan Agarwal",
+        "fatherName": "Suresh Gupta",
+        "studentId": "GIS2026-7A-0044",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=45",
+        "gender": "Female"
+      },
+      {
+        "id": "s-045",
+        "rollNumber": 7,
+        "fullName": "Dev Dubey",
+        "fatherName": "Deepak Agarwal",
+        "studentId": "GIS2026-7A-0045",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=46",
+        "gender": "Female"
+      },
+      {
+        "id": "s-046",
+        "rollNumber": 8,
+        "fullName": "Vivaan Singh",
+        "fatherName": "Vikram Pandey",
+        "studentId": "GIS2026-7A-0046",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=47",
+        "gender": "Female"
+      },
+      {
+        "id": "s-047",
+        "rollNumber": 9,
+        "fullName": "Yash Mishra",
+        "fatherName": "Pradeep Mishra",
+        "studentId": "GIS2026-7A-0047",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=48",
+        "gender": "Female"
+      },
+      {
+        "id": "s-048",
+        "rollNumber": 10,
+        "fullName": "Dhruv Agarwal",
+        "fatherName": "Sanjay Srivastava",
+        "studentId": "GIS2026-7A-0048",
+        "className": "Class 7",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=49",
+        "gender": "Female"
+      }
+    ],
+    "Class 7|B": [
+      {
+        "id": "s-049",
+        "rollNumber": 1,
+        "fullName": "Ayaan Gupta",
+        "fatherName": "Suresh Das",
+        "studentId": "GIS2026-7B-0049",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=50",
+        "gender": "Female"
+      },
+      {
+        "id": "s-050",
+        "rollNumber": 2,
+        "fullName": "Dev Das",
+        "fatherName": "Deepak Dubey",
+        "studentId": "GIS2026-7B-0050",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=51",
+        "gender": "Female"
+      },
+      {
+        "id": "s-051",
+        "rollNumber": 3,
+        "fullName": "Vivaan Srivastava",
+        "fatherName": "Vikram Gupta",
+        "studentId": "GIS2026-7B-0051",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=52",
+        "gender": "Female"
+      },
+      {
+        "id": "s-052",
+        "rollNumber": 4,
+        "fullName": "Yash Pandey",
+        "fatherName": "Pradeep Agarwal",
+        "studentId": "GIS2026-7B-0052",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=53",
+        "gender": "Female"
+      },
+      {
+        "id": "s-053",
+        "rollNumber": 5,
+        "fullName": "Dhruv Gupta",
+        "fatherName": "Sanjay Pandey",
+        "studentId": "GIS2026-7B-0053",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=54",
+        "gender": "Female"
+      },
+      {
+        "id": "s-054",
+        "rollNumber": 6,
+        "fullName": "Aditya Das",
+        "fatherName": "Ashish Mishra",
+        "studentId": "GIS2026-7B-0054",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=55",
+        "gender": "Female"
+      },
+      {
+        "id": "s-055",
+        "rollNumber": 7,
+        "fullName": "Shaurya Srivastava",
+        "fatherName": "Dinesh Srivastava",
+        "studentId": "GIS2026-7B-0055",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=56",
+        "gender": "Female"
+      },
+      {
+        "id": "s-056",
+        "rollNumber": 8,
+        "fullName": "Neil Pandey",
+        "fatherName": "Gaurav Singh",
+        "studentId": "GIS2026-7B-0056",
+        "className": "Class 7",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=57",
+        "gender": "Female"
+      }
+    ],
+    "Class 8|A": [
+      {
+        "id": "s-057",
+        "rollNumber": 1,
+        "fullName": "Dhruv Srivastava",
+        "fatherName": "Sanjay Pandey",
+        "studentId": "GIS2026-8A-0057",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=58",
+        "gender": "Female"
+      },
+      {
+        "id": "s-058",
+        "rollNumber": 2,
+        "fullName": "Aditya Pandey",
+        "fatherName": "Ashish Mishra",
+        "studentId": "GIS2026-8A-0058",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=59",
+        "gender": "Female"
+      },
+      {
+        "id": "s-059",
+        "rollNumber": 3,
+        "fullName": "Shaurya Gupta",
+        "fatherName": "Dinesh Srivastava",
+        "studentId": "GIS2026-8A-0059",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=60",
+        "gender": "Female"
+      },
+      {
+        "id": "s-060",
+        "rollNumber": 4,
+        "fullName": "Neil Das",
+        "fatherName": "Gaurav Singh",
+        "studentId": "GIS2026-8A-0060",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=61",
+        "gender": "Female"
+      },
+      {
+        "id": "s-061",
+        "rollNumber": 5,
+        "fullName": "Aarav Srivastava",
+        "fatherName": "Suresh Das",
+        "studentId": "GIS2026-8A-0061",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=62",
+        "gender": "Female"
+      },
+      {
+        "id": "s-062",
+        "rollNumber": 6,
+        "fullName": "Rohan Pandey",
+        "fatherName": "Deepak Dubey",
+        "studentId": "GIS2026-8A-0062",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=63",
+        "gender": "Female"
+      },
+      {
+        "id": "s-063",
+        "rollNumber": 7,
+        "fullName": "Vihaan Gupta",
+        "fatherName": "Vikram Gupta",
+        "studentId": "GIS2026-8A-0063",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=64",
+        "gender": "Female"
+      },
+      {
+        "id": "s-064",
+        "rollNumber": 8,
+        "fullName": "Advait Das",
+        "fatherName": "Pradeep Agarwal",
+        "studentId": "GIS2026-8A-0064",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=65",
+        "gender": "Female"
+      },
+      {
+        "id": "s-065",
+        "rollNumber": 9,
+        "fullName": "Arjun Srivastava",
+        "fatherName": "Sanjay Pandey",
+        "studentId": "GIS2026-8A-0065",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=66",
+        "gender": "Female"
+      },
+      {
+        "id": "s-066",
+        "rollNumber": 10,
+        "fullName": "Kabir Pandey",
+        "fatherName": "Ashish Mishra",
+        "studentId": "GIS2026-8A-0066",
+        "className": "Class 8",
+        "section": "A",
+        "photoUrl": "https://i.pravatar.cc/320?img=67",
+        "gender": "Female"
+      }
+    ],
+    "Class 8|B": [
+      {
+        "id": "s-067",
+        "rollNumber": 1,
+        "fullName": "Rohan Agarwal",
+        "fatherName": "Deepak Singh",
+        "studentId": "GIS2026-8B-0067",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=68",
+        "gender": "Female"
+      },
+      {
+        "id": "s-068",
+        "rollNumber": 2,
+        "fullName": "Vihaan Dubey",
+        "fatherName": "Vikram Das",
+        "studentId": "GIS2026-8B-0068",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=69",
+        "gender": "Female"
+      },
+      {
+        "id": "s-069",
+        "rollNumber": 3,
+        "fullName": "Advait Singh",
+        "fatherName": "Pradeep Dubey",
+        "studentId": "GIS2026-8B-0069",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=70",
+        "gender": "Female"
+      },
+      {
+        "id": "s-070",
+        "rollNumber": 4,
+        "fullName": "Arjun Mishra",
+        "fatherName": "Sanjay Gupta",
+        "studentId": "GIS2026-8B-0070",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=1",
+        "gender": "Female"
+      },
+      {
+        "id": "s-071",
+        "rollNumber": 5,
+        "fullName": "Kabir Agarwal",
+        "fatherName": "Ashish Agarwal",
+        "studentId": "GIS2026-8B-0071",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=2",
+        "gender": "Female"
+      },
+      {
+        "id": "s-072",
+        "rollNumber": 6,
+        "fullName": "Reyansh Dubey",
+        "fatherName": "Dinesh Pandey",
+        "studentId": "GIS2026-8B-0072",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=3",
+        "gender": "Female"
+      },
+      {
+        "id": "s-073",
+        "rollNumber": 7,
+        "fullName": "Krishna Singh",
+        "fatherName": "Gaurav Mishra",
+        "studentId": "GIS2026-8B-0073",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=4",
+        "gender": "Female"
+      },
+      {
+        "id": "s-074",
+        "rollNumber": 8,
+        "fullName": "Ayaan Mishra",
+        "fatherName": "Suresh Srivastava",
+        "studentId": "GIS2026-8B-0074",
+        "className": "Class 8",
+        "section": "B",
+        "photoUrl": "https://i.pravatar.cc/320?img=5",
+        "gender": "Female"
+      }
+    ]
+  },
+  "subjectsByClass": {
+    "Class 5": [
+      "Mathematics",
+      "English",
+      "Science",
+      "Social Studies",
+      "Computer"
+    ],
+    "Class 6": [
+      "Mathematics",
+      "English",
+      "Science",
+      "Social Studies",
+      "Computer"
+    ],
+    "Class 7": [
+      "Mathematics",
+      "English",
+      "Science",
+      "Social Studies",
+      "Computer"
+    ],
+    "Class 8": [
+      "Mathematics",
+      "English",
+      "Physics",
+      "Chemistry",
+      "Biology",
+      "Social Studies",
+      "Computer"
+    ]
+  },
+  "timetable": [
+    {
+      "time": "09:30 AM",
+      "className": "Class 5",
+      "section": "A",
+      "subject": "Mathematics",
+      "room": "Room 12"
+    },
+    {
+      "time": "11:00 AM",
+      "className": "Class 6",
+      "section": "B",
+      "subject": "Mathematics",
+      "room": "Room 15"
+    },
+    {
+      "time": "01:00 PM",
+      "className": "Class 7",
+      "section": "A",
+      "subject": "Mathematics",
+      "room": "Room 21"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-1",
+      "type": "attendance",
+      "title": "Attendance reminder",
+      "message": "Period 3 · Class 5A starts in 10 minutes.",
+      "dateLabel": "10 min ago",
+      "read": false,
+      "titleHi": "अटेंडेंस रिमाइंडर",
+      "messageHi": "पीरियड 3 · कक्षा 5A दस मिनट में शुरू होगी।",
+      "dateLabelHi": "10 मिनट पहले"
+    },
+    {
+      "id": "n-2",
+      "type": "results",
+      "title": "Result set saved in demo",
+      "message": "Unit Test 2 · Class 5A is available in Previous Results.",
+      "dateLabel": "Today · 10:45 AM",
+      "read": false,
+      "titleHi": "डेमो में रिज़ल्ट सेट सेव हुआ",
+      "messageHi": "यूनिट टेस्ट 2 · कक्षा 5A पुराने रिज़ल्ट में उपलब्ध है।",
+      "dateLabelHi": "आज · सुबह 10:45"
+    },
+    {
+      "id": "n-3",
+      "type": "general",
+      "title": "School notice",
+      "message": "The staff meeting is scheduled for Friday at 2:30 PM.",
+      "dateLabel": "Yesterday",
+      "read": true,
+      "titleHi": "स्कूल सूचना",
+      "messageHi": "स्टाफ मीटिंग शुक्रवार दोपहर 2:30 बजे निर्धारित है।",
+      "dateLabelHi": "कल"
+    },
+    {
+      "id": "n-4",
+      "type": "schedule",
+      "title": "Class schedule updated",
+      "message": "Class 6B science period moved to 11:00 AM.",
+      "dateLabel": "2 days ago",
+      "read": true,
+      "titleHi": "कक्षा का समय बदला",
+      "messageHi": "कक्षा 6B की साइंस अवधि सुबह 11 बजे कर दी गई है।",
+      "dateLabelHi": "2 दिन पहले"
+    }
+  ],
+  "previousResults": [
+    {
+      "id": "prev-class5-A-0-0",
+      "className": "Class 5",
+      "section": "A",
+      "subject": "Mathematics",
+      "testName": "Unit Test 1",
+      "date": "2026-07-12",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 12,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-001",
+          "rollNumber": 1,
+          "studentName": "Aarav Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-5A-0001",
+          "obtainedMarks": 0,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-002",
+          "rollNumber": 2,
+          "studentName": "Rohan Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-5A-0002",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-003",
+          "rollNumber": 3,
+          "studentName": "Vihaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-5A-0003",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-004",
+          "rollNumber": 4,
+          "studentName": "Advait Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-5A-0004",
+          "obtainedMarks": 0,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-005",
+          "rollNumber": 5,
+          "studentName": "Arjun Gupta",
+          "fatherName": "Sanjay Pandey",
+          "uniqueId": "GIS2026-5A-0005",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-006",
+          "rollNumber": 6,
+          "studentName": "Kabir Das",
+          "fatherName": "Ashish Mishra",
+          "uniqueId": "GIS2026-5A-0006",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-007",
+          "rollNumber": 7,
+          "studentName": "Reyansh Srivastava",
+          "fatherName": "Dinesh Srivastava",
+          "uniqueId": "GIS2026-5A-0007",
+          "obtainedMarks": 0,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-008",
+          "rollNumber": 8,
+          "studentName": "Krishna Pandey",
+          "fatherName": "Gaurav Singh",
+          "uniqueId": "GIS2026-5A-0008",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-009",
+          "rollNumber": 9,
+          "studentName": "Ayaan Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-5A-0009",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-010",
+          "rollNumber": 10,
+          "studentName": "Dev Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-5A-0010",
+          "obtainedMarks": 0,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-011",
+          "rollNumber": 11,
+          "studentName": "Vivaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-5A-0011",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-012",
+          "rollNumber": 12,
+          "studentName": "Yash Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-5A-0012",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-07-12T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class5-A-1-0",
+      "className": "Class 5",
+      "section": "A",
+      "subject": "Mathematics",
+      "testName": "Unit Test 2",
+      "date": "2026-08-19",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 12,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-001",
+          "rollNumber": 1,
+          "studentName": "Aarav Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-5A-0001",
+          "obtainedMarks": 4,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-002",
+          "rollNumber": 2,
+          "studentName": "Rohan Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-5A-0002",
+          "obtainedMarks": 11,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-003",
+          "rollNumber": 3,
+          "studentName": "Vihaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-5A-0003",
+          "obtainedMarks": 18,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-004",
+          "rollNumber": 4,
+          "studentName": "Advait Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-5A-0004",
+          "obtainedMarks": 4,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-005",
+          "rollNumber": 5,
+          "studentName": "Arjun Gupta",
+          "fatherName": "Sanjay Pandey",
+          "uniqueId": "GIS2026-5A-0005",
+          "obtainedMarks": 11,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-006",
+          "rollNumber": 6,
+          "studentName": "Kabir Das",
+          "fatherName": "Ashish Mishra",
+          "uniqueId": "GIS2026-5A-0006",
+          "obtainedMarks": 18,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-007",
+          "rollNumber": 7,
+          "studentName": "Reyansh Srivastava",
+          "fatherName": "Dinesh Srivastava",
+          "uniqueId": "GIS2026-5A-0007",
+          "obtainedMarks": 4,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-008",
+          "rollNumber": 8,
+          "studentName": "Krishna Pandey",
+          "fatherName": "Gaurav Singh",
+          "uniqueId": "GIS2026-5A-0008",
+          "obtainedMarks": 11,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-009",
+          "rollNumber": 9,
+          "studentName": "Ayaan Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-5A-0009",
+          "obtainedMarks": 18,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-010",
+          "rollNumber": 10,
+          "studentName": "Dev Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-5A-0010",
+          "obtainedMarks": 4,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-011",
+          "rollNumber": 11,
+          "studentName": "Vivaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-5A-0011",
+          "obtainedMarks": 11,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-012",
+          "rollNumber": 12,
+          "studentName": "Yash Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-5A-0012",
+          "obtainedMarks": 18,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-19T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class5-A-2-0",
+      "className": "Class 5",
+      "section": "A",
+      "subject": "English",
+      "testName": "Reading Assessment",
+      "date": "2026-08-24",
+      "academicYear": "2026-27",
+      "teacherId": "t-neha",
+      "totalStudents": 12,
+      "maxMarks": 30,
+      "entries": [
+        {
+          "studentId": "s-001",
+          "rollNumber": 1,
+          "studentName": "Aarav Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-5A-0001",
+          "obtainedMarks": 8,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-002",
+          "rollNumber": 2,
+          "studentName": "Rohan Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-5A-0002",
+          "obtainedMarks": 15,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-003",
+          "rollNumber": 3,
+          "studentName": "Vihaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-5A-0003",
+          "obtainedMarks": 22,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-004",
+          "rollNumber": 4,
+          "studentName": "Advait Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-5A-0004",
+          "obtainedMarks": 29,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-005",
+          "rollNumber": 5,
+          "studentName": "Arjun Gupta",
+          "fatherName": "Sanjay Pandey",
+          "uniqueId": "GIS2026-5A-0005",
+          "obtainedMarks": 5,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-006",
+          "rollNumber": 6,
+          "studentName": "Kabir Das",
+          "fatherName": "Ashish Mishra",
+          "uniqueId": "GIS2026-5A-0006",
+          "obtainedMarks": 12,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-007",
+          "rollNumber": 7,
+          "studentName": "Reyansh Srivastava",
+          "fatherName": "Dinesh Srivastava",
+          "uniqueId": "GIS2026-5A-0007",
+          "obtainedMarks": 19,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-008",
+          "rollNumber": 8,
+          "studentName": "Krishna Pandey",
+          "fatherName": "Gaurav Singh",
+          "uniqueId": "GIS2026-5A-0008",
+          "obtainedMarks": 26,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-009",
+          "rollNumber": 9,
+          "studentName": "Ayaan Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-5A-0009",
+          "obtainedMarks": 2,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-010",
+          "rollNumber": 10,
+          "studentName": "Dev Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-5A-0010",
+          "obtainedMarks": 9,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-011",
+          "rollNumber": 11,
+          "studentName": "Vivaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-5A-0011",
+          "obtainedMarks": 16,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-012",
+          "rollNumber": 12,
+          "studentName": "Yash Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-5A-0012",
+          "obtainedMarks": 23,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-24T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class5-B-0-1",
+      "className": "Class 5",
+      "section": "B",
+      "subject": "Mathematics",
+      "testName": "Unit Test 1",
+      "date": "2026-07-12",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 8,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-013",
+          "rollNumber": 1,
+          "studentName": "Reyansh Das",
+          "fatherName": "Dinesh Gupta",
+          "uniqueId": "GIS2026-5B-0013",
+          "obtainedMarks": 3,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-014",
+          "rollNumber": 2,
+          "studentName": "Krishna Srivastava",
+          "fatherName": "Gaurav Agarwal",
+          "uniqueId": "GIS2026-5B-0014",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-015",
+          "rollNumber": 3,
+          "studentName": "Ayaan Pandey",
+          "fatherName": "Suresh Pandey",
+          "uniqueId": "GIS2026-5B-0015",
+          "obtainedMarks": 17,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-016",
+          "rollNumber": 4,
+          "studentName": "Dev Gupta",
+          "fatherName": "Deepak Mishra",
+          "uniqueId": "GIS2026-5B-0016",
+          "obtainedMarks": 3,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-017",
+          "rollNumber": 5,
+          "studentName": "Vivaan Das",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-5B-0017",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-018",
+          "rollNumber": 6,
+          "studentName": "Yash Srivastava",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-5B-0018",
+          "obtainedMarks": 17,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-019",
+          "rollNumber": 7,
+          "studentName": "Dhruv Pandey",
+          "fatherName": "Sanjay Das",
+          "uniqueId": "GIS2026-5B-0019",
+          "obtainedMarks": 3,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-020",
+          "rollNumber": 8,
+          "studentName": "Aditya Gupta",
+          "fatherName": "Ashish Dubey",
+          "uniqueId": "GIS2026-5B-0020",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-07-12T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class5-B-1-1",
+      "className": "Class 5",
+      "section": "B",
+      "subject": "Mathematics",
+      "testName": "Unit Test 2",
+      "date": "2026-08-19",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 8,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-013",
+          "rollNumber": 1,
+          "studentName": "Reyansh Das",
+          "fatherName": "Dinesh Gupta",
+          "uniqueId": "GIS2026-5B-0013",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-014",
+          "rollNumber": 2,
+          "studentName": "Krishna Srivastava",
+          "fatherName": "Gaurav Agarwal",
+          "uniqueId": "GIS2026-5B-0014",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-015",
+          "rollNumber": 3,
+          "studentName": "Ayaan Pandey",
+          "fatherName": "Suresh Pandey",
+          "uniqueId": "GIS2026-5B-0015",
+          "obtainedMarks": 0,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-016",
+          "rollNumber": 4,
+          "studentName": "Dev Gupta",
+          "fatherName": "Deepak Mishra",
+          "uniqueId": "GIS2026-5B-0016",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-017",
+          "rollNumber": 5,
+          "studentName": "Vivaan Das",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-5B-0017",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-018",
+          "rollNumber": 6,
+          "studentName": "Yash Srivastava",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-5B-0018",
+          "obtainedMarks": 0,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-019",
+          "rollNumber": 7,
+          "studentName": "Dhruv Pandey",
+          "fatherName": "Sanjay Das",
+          "uniqueId": "GIS2026-5B-0019",
+          "obtainedMarks": 7,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-020",
+          "rollNumber": 8,
+          "studentName": "Aditya Gupta",
+          "fatherName": "Ashish Dubey",
+          "uniqueId": "GIS2026-5B-0020",
+          "obtainedMarks": 14,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-19T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class5-B-2-1",
+      "className": "Class 5",
+      "section": "B",
+      "subject": "English",
+      "testName": "Reading Assessment",
+      "date": "2026-08-24",
+      "academicYear": "2026-27",
+      "teacherId": "t-neha",
+      "totalStudents": 8,
+      "maxMarks": 30,
+      "entries": [
+        {
+          "studentId": "s-013",
+          "rollNumber": 1,
+          "studentName": "Reyansh Das",
+          "fatherName": "Dinesh Gupta",
+          "uniqueId": "GIS2026-5B-0013",
+          "obtainedMarks": 11,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-014",
+          "rollNumber": 2,
+          "studentName": "Krishna Srivastava",
+          "fatherName": "Gaurav Agarwal",
+          "uniqueId": "GIS2026-5B-0014",
+          "obtainedMarks": 18,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-015",
+          "rollNumber": 3,
+          "studentName": "Ayaan Pandey",
+          "fatherName": "Suresh Pandey",
+          "uniqueId": "GIS2026-5B-0015",
+          "obtainedMarks": 25,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-016",
+          "rollNumber": 4,
+          "studentName": "Dev Gupta",
+          "fatherName": "Deepak Mishra",
+          "uniqueId": "GIS2026-5B-0016",
+          "obtainedMarks": 1,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-017",
+          "rollNumber": 5,
+          "studentName": "Vivaan Das",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-5B-0017",
+          "obtainedMarks": 8,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-018",
+          "rollNumber": 6,
+          "studentName": "Yash Srivastava",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-5B-0018",
+          "obtainedMarks": 15,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-019",
+          "rollNumber": 7,
+          "studentName": "Dhruv Pandey",
+          "fatherName": "Sanjay Das",
+          "uniqueId": "GIS2026-5B-0019",
+          "obtainedMarks": 22,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-020",
+          "rollNumber": 8,
+          "studentName": "Aditya Gupta",
+          "fatherName": "Ashish Dubey",
+          "uniqueId": "GIS2026-5B-0020",
+          "obtainedMarks": 29,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-24T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class6-A-0-2",
+      "className": "Class 6",
+      "section": "A",
+      "subject": "Mathematics",
+      "testName": "Unit Test 1",
+      "date": "2026-07-12",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 10,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-021",
+          "rollNumber": 1,
+          "studentName": "Vivaan Pandey",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-6A-0021",
+          "obtainedMarks": 6,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-022",
+          "rollNumber": 2,
+          "studentName": "Yash Gupta",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-6A-0022",
+          "obtainedMarks": 13,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-023",
+          "rollNumber": 3,
+          "studentName": "Dhruv Das",
+          "fatherName": "Sanjay Das",
+          "uniqueId": "GIS2026-6A-0023",
+          "obtainedMarks": 20,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-024",
+          "rollNumber": 4,
+          "studentName": "Aditya Srivastava",
+          "fatherName": "Ashish Dubey",
+          "uniqueId": "GIS2026-6A-0024",
+          "obtainedMarks": 6,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-025",
+          "rollNumber": 5,
+          "studentName": "Shaurya Pandey",
+          "fatherName": "Dinesh Gupta",
+          "uniqueId": "GIS2026-6A-0025",
+          "obtainedMarks": 13,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-026",
+          "rollNumber": 6,
+          "studentName": "Neil Gupta",
+          "fatherName": "Gaurav Agarwal",
+          "uniqueId": "GIS2026-6A-0026",
+          "obtainedMarks": 20,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-027",
+          "rollNumber": 7,
+          "studentName": "Aarav Das",
+          "fatherName": "Suresh Pandey",
+          "uniqueId": "GIS2026-6A-0027",
+          "obtainedMarks": 6,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-028",
+          "rollNumber": 8,
+          "studentName": "Rohan Srivastava",
+          "fatherName": "Deepak Mishra",
+          "uniqueId": "GIS2026-6A-0028",
+          "obtainedMarks": 13,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-029",
+          "rollNumber": 9,
+          "studentName": "Vihaan Pandey",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-6A-0029",
+          "obtainedMarks": 20,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-030",
+          "rollNumber": 10,
+          "studentName": "Advait Gupta",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-6A-0030",
+          "obtainedMarks": 6,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-07-12T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class6-A-1-2",
+      "className": "Class 6",
+      "section": "A",
+      "subject": "Mathematics",
+      "testName": "Unit Test 2",
+      "date": "2026-08-19",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 10,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-021",
+          "rollNumber": 1,
+          "studentName": "Vivaan Pandey",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-6A-0021",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-022",
+          "rollNumber": 2,
+          "studentName": "Yash Gupta",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-6A-0022",
+          "obtainedMarks": 17,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-023",
+          "rollNumber": 3,
+          "studentName": "Dhruv Das",
+          "fatherName": "Sanjay Das",
+          "uniqueId": "GIS2026-6A-0023",
+          "obtainedMarks": 3,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-024",
+          "rollNumber": 4,
+          "studentName": "Aditya Srivastava",
+          "fatherName": "Ashish Dubey",
+          "uniqueId": "GIS2026-6A-0024",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-025",
+          "rollNumber": 5,
+          "studentName": "Shaurya Pandey",
+          "fatherName": "Dinesh Gupta",
+          "uniqueId": "GIS2026-6A-0025",
+          "obtainedMarks": 17,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-026",
+          "rollNumber": 6,
+          "studentName": "Neil Gupta",
+          "fatherName": "Gaurav Agarwal",
+          "uniqueId": "GIS2026-6A-0026",
+          "obtainedMarks": 3,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-027",
+          "rollNumber": 7,
+          "studentName": "Aarav Das",
+          "fatherName": "Suresh Pandey",
+          "uniqueId": "GIS2026-6A-0027",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-028",
+          "rollNumber": 8,
+          "studentName": "Rohan Srivastava",
+          "fatherName": "Deepak Mishra",
+          "uniqueId": "GIS2026-6A-0028",
+          "obtainedMarks": 17,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-029",
+          "rollNumber": 9,
+          "studentName": "Vihaan Pandey",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-6A-0029",
+          "obtainedMarks": 3,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-030",
+          "rollNumber": 10,
+          "studentName": "Advait Gupta",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-6A-0030",
+          "obtainedMarks": 10,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-19T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class6-A-2-2",
+      "className": "Class 6",
+      "section": "A",
+      "subject": "English",
+      "testName": "Reading Assessment",
+      "date": "2026-08-24",
+      "academicYear": "2026-27",
+      "teacherId": "t-neha",
+      "totalStudents": 10,
+      "maxMarks": 30,
+      "entries": [
+        {
+          "studentId": "s-021",
+          "rollNumber": 1,
+          "studentName": "Vivaan Pandey",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-6A-0021",
+          "obtainedMarks": 14,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-022",
+          "rollNumber": 2,
+          "studentName": "Yash Gupta",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-6A-0022",
+          "obtainedMarks": 21,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-023",
+          "rollNumber": 3,
+          "studentName": "Dhruv Das",
+          "fatherName": "Sanjay Das",
+          "uniqueId": "GIS2026-6A-0023",
+          "obtainedMarks": 28,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-024",
+          "rollNumber": 4,
+          "studentName": "Aditya Srivastava",
+          "fatherName": "Ashish Dubey",
+          "uniqueId": "GIS2026-6A-0024",
+          "obtainedMarks": 4,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-025",
+          "rollNumber": 5,
+          "studentName": "Shaurya Pandey",
+          "fatherName": "Dinesh Gupta",
+          "uniqueId": "GIS2026-6A-0025",
+          "obtainedMarks": 11,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-026",
+          "rollNumber": 6,
+          "studentName": "Neil Gupta",
+          "fatherName": "Gaurav Agarwal",
+          "uniqueId": "GIS2026-6A-0026",
+          "obtainedMarks": 18,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-027",
+          "rollNumber": 7,
+          "studentName": "Aarav Das",
+          "fatherName": "Suresh Pandey",
+          "uniqueId": "GIS2026-6A-0027",
+          "obtainedMarks": 25,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-028",
+          "rollNumber": 8,
+          "studentName": "Rohan Srivastava",
+          "fatherName": "Deepak Mishra",
+          "uniqueId": "GIS2026-6A-0028",
+          "obtainedMarks": 1,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-029",
+          "rollNumber": 9,
+          "studentName": "Vihaan Pandey",
+          "fatherName": "Vikram Srivastava",
+          "uniqueId": "GIS2026-6A-0029",
+          "obtainedMarks": 8,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-030",
+          "rollNumber": 10,
+          "studentName": "Advait Gupta",
+          "fatherName": "Pradeep Singh",
+          "uniqueId": "GIS2026-6A-0030",
+          "obtainedMarks": 15,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-24T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class6-B-0-3",
+      "className": "Class 6",
+      "section": "B",
+      "subject": "Mathematics",
+      "testName": "Unit Test 1",
+      "date": "2026-07-12",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 8,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-031",
+          "rollNumber": 1,
+          "studentName": "Neil Dubey",
+          "fatherName": "Gaurav Dubey",
+          "uniqueId": "GIS2026-6B-0031",
+          "obtainedMarks": 9,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-032",
+          "rollNumber": 2,
+          "studentName": "Aarav Singh",
+          "fatherName": "Suresh Gupta",
+          "uniqueId": "GIS2026-6B-0032",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-033",
+          "rollNumber": 3,
+          "studentName": "Rohan Mishra",
+          "fatherName": "Deepak Agarwal",
+          "uniqueId": "GIS2026-6B-0033",
+          "obtainedMarks": 2,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-034",
+          "rollNumber": 4,
+          "studentName": "Vihaan Agarwal",
+          "fatherName": "Vikram Pandey",
+          "uniqueId": "GIS2026-6B-0034",
+          "obtainedMarks": 9,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-035",
+          "rollNumber": 5,
+          "studentName": "Advait Dubey",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-6B-0035",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-036",
+          "rollNumber": 6,
+          "studentName": "Arjun Singh",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-6B-0036",
+          "obtainedMarks": 2,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-037",
+          "rollNumber": 7,
+          "studentName": "Kabir Mishra",
+          "fatherName": "Ashish Singh",
+          "uniqueId": "GIS2026-6B-0037",
+          "obtainedMarks": 9,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-038",
+          "rollNumber": 8,
+          "studentName": "Reyansh Agarwal",
+          "fatherName": "Dinesh Das",
+          "uniqueId": "GIS2026-6B-0038",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-07-12T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class6-B-1-3",
+      "className": "Class 6",
+      "section": "B",
+      "subject": "Mathematics",
+      "testName": "Unit Test 2",
+      "date": "2026-08-19",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 8,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-031",
+          "rollNumber": 1,
+          "studentName": "Neil Dubey",
+          "fatherName": "Gaurav Dubey",
+          "uniqueId": "GIS2026-6B-0031",
+          "obtainedMarks": 13,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-032",
+          "rollNumber": 2,
+          "studentName": "Aarav Singh",
+          "fatherName": "Suresh Gupta",
+          "uniqueId": "GIS2026-6B-0032",
+          "obtainedMarks": 20,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-033",
+          "rollNumber": 3,
+          "studentName": "Rohan Mishra",
+          "fatherName": "Deepak Agarwal",
+          "uniqueId": "GIS2026-6B-0033",
+          "obtainedMarks": 6,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-034",
+          "rollNumber": 4,
+          "studentName": "Vihaan Agarwal",
+          "fatherName": "Vikram Pandey",
+          "uniqueId": "GIS2026-6B-0034",
+          "obtainedMarks": 13,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-035",
+          "rollNumber": 5,
+          "studentName": "Advait Dubey",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-6B-0035",
+          "obtainedMarks": 20,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-036",
+          "rollNumber": 6,
+          "studentName": "Arjun Singh",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-6B-0036",
+          "obtainedMarks": 6,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-037",
+          "rollNumber": 7,
+          "studentName": "Kabir Mishra",
+          "fatherName": "Ashish Singh",
+          "uniqueId": "GIS2026-6B-0037",
+          "obtainedMarks": 13,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-038",
+          "rollNumber": 8,
+          "studentName": "Reyansh Agarwal",
+          "fatherName": "Dinesh Das",
+          "uniqueId": "GIS2026-6B-0038",
+          "obtainedMarks": 20,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-19T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class6-B-2-3",
+      "className": "Class 6",
+      "section": "B",
+      "subject": "English",
+      "testName": "Reading Assessment",
+      "date": "2026-08-24",
+      "academicYear": "2026-27",
+      "teacherId": "t-neha",
+      "totalStudents": 8,
+      "maxMarks": 30,
+      "entries": [
+        {
+          "studentId": "s-031",
+          "rollNumber": 1,
+          "studentName": "Neil Dubey",
+          "fatherName": "Gaurav Dubey",
+          "uniqueId": "GIS2026-6B-0031",
+          "obtainedMarks": 17,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-032",
+          "rollNumber": 2,
+          "studentName": "Aarav Singh",
+          "fatherName": "Suresh Gupta",
+          "uniqueId": "GIS2026-6B-0032",
+          "obtainedMarks": 24,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-033",
+          "rollNumber": 3,
+          "studentName": "Rohan Mishra",
+          "fatherName": "Deepak Agarwal",
+          "uniqueId": "GIS2026-6B-0033",
+          "obtainedMarks": 0,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-034",
+          "rollNumber": 4,
+          "studentName": "Vihaan Agarwal",
+          "fatherName": "Vikram Pandey",
+          "uniqueId": "GIS2026-6B-0034",
+          "obtainedMarks": 7,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-035",
+          "rollNumber": 5,
+          "studentName": "Advait Dubey",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-6B-0035",
+          "obtainedMarks": 14,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-036",
+          "rollNumber": 6,
+          "studentName": "Arjun Singh",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-6B-0036",
+          "obtainedMarks": 21,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-037",
+          "rollNumber": 7,
+          "studentName": "Kabir Mishra",
+          "fatherName": "Ashish Singh",
+          "uniqueId": "GIS2026-6B-0037",
+          "obtainedMarks": 28,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-038",
+          "rollNumber": 8,
+          "studentName": "Reyansh Agarwal",
+          "fatherName": "Dinesh Das",
+          "uniqueId": "GIS2026-6B-0038",
+          "obtainedMarks": 4,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-24T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class7-A-0-4",
+      "className": "Class 7",
+      "section": "A",
+      "subject": "Mathematics",
+      "testName": "Unit Test 1",
+      "date": "2026-07-12",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 10,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-039",
+          "rollNumber": 1,
+          "studentName": "Advait Mishra",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-7A-0039",
+          "obtainedMarks": 12,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-040",
+          "rollNumber": 2,
+          "studentName": "Arjun Agarwal",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-7A-0040",
+          "obtainedMarks": 19,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-041",
+          "rollNumber": 3,
+          "studentName": "Kabir Dubey",
+          "fatherName": "Ashish Singh",
+          "uniqueId": "GIS2026-7A-0041",
+          "obtainedMarks": 5,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-042",
+          "rollNumber": 4,
+          "studentName": "Reyansh Singh",
+          "fatherName": "Dinesh Das",
+          "uniqueId": "GIS2026-7A-0042",
+          "obtainedMarks": 12,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-043",
+          "rollNumber": 5,
+          "studentName": "Krishna Mishra",
+          "fatherName": "Gaurav Dubey",
+          "uniqueId": "GIS2026-7A-0043",
+          "obtainedMarks": 19,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-044",
+          "rollNumber": 6,
+          "studentName": "Ayaan Agarwal",
+          "fatherName": "Suresh Gupta",
+          "uniqueId": "GIS2026-7A-0044",
+          "obtainedMarks": 5,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-045",
+          "rollNumber": 7,
+          "studentName": "Dev Dubey",
+          "fatherName": "Deepak Agarwal",
+          "uniqueId": "GIS2026-7A-0045",
+          "obtainedMarks": 12,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-046",
+          "rollNumber": 8,
+          "studentName": "Vivaan Singh",
+          "fatherName": "Vikram Pandey",
+          "uniqueId": "GIS2026-7A-0046",
+          "obtainedMarks": 19,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-047",
+          "rollNumber": 9,
+          "studentName": "Yash Mishra",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-7A-0047",
+          "obtainedMarks": 5,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-048",
+          "rollNumber": 10,
+          "studentName": "Dhruv Agarwal",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-7A-0048",
+          "obtainedMarks": 12,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-07-12T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class7-A-1-4",
+      "className": "Class 7",
+      "section": "A",
+      "subject": "Mathematics",
+      "testName": "Unit Test 2",
+      "date": "2026-08-19",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 10,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-039",
+          "rollNumber": 1,
+          "studentName": "Advait Mishra",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-7A-0039",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-040",
+          "rollNumber": 2,
+          "studentName": "Arjun Agarwal",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-7A-0040",
+          "obtainedMarks": 2,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-041",
+          "rollNumber": 3,
+          "studentName": "Kabir Dubey",
+          "fatherName": "Ashish Singh",
+          "uniqueId": "GIS2026-7A-0041",
+          "obtainedMarks": 9,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-042",
+          "rollNumber": 4,
+          "studentName": "Reyansh Singh",
+          "fatherName": "Dinesh Das",
+          "uniqueId": "GIS2026-7A-0042",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-043",
+          "rollNumber": 5,
+          "studentName": "Krishna Mishra",
+          "fatherName": "Gaurav Dubey",
+          "uniqueId": "GIS2026-7A-0043",
+          "obtainedMarks": 2,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-044",
+          "rollNumber": 6,
+          "studentName": "Ayaan Agarwal",
+          "fatherName": "Suresh Gupta",
+          "uniqueId": "GIS2026-7A-0044",
+          "obtainedMarks": 9,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-045",
+          "rollNumber": 7,
+          "studentName": "Dev Dubey",
+          "fatherName": "Deepak Agarwal",
+          "uniqueId": "GIS2026-7A-0045",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-046",
+          "rollNumber": 8,
+          "studentName": "Vivaan Singh",
+          "fatherName": "Vikram Pandey",
+          "uniqueId": "GIS2026-7A-0046",
+          "obtainedMarks": 2,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-047",
+          "rollNumber": 9,
+          "studentName": "Yash Mishra",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-7A-0047",
+          "obtainedMarks": 9,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-048",
+          "rollNumber": 10,
+          "studentName": "Dhruv Agarwal",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-7A-0048",
+          "obtainedMarks": 16,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-19T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class7-A-2-4",
+      "className": "Class 7",
+      "section": "A",
+      "subject": "English",
+      "testName": "Reading Assessment",
+      "date": "2026-08-24",
+      "academicYear": "2026-27",
+      "teacherId": "t-neha",
+      "totalStudents": 10,
+      "maxMarks": 30,
+      "entries": [
+        {
+          "studentId": "s-039",
+          "rollNumber": 1,
+          "studentName": "Advait Mishra",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-7A-0039",
+          "obtainedMarks": 20,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-040",
+          "rollNumber": 2,
+          "studentName": "Arjun Agarwal",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-7A-0040",
+          "obtainedMarks": 27,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-041",
+          "rollNumber": 3,
+          "studentName": "Kabir Dubey",
+          "fatherName": "Ashish Singh",
+          "uniqueId": "GIS2026-7A-0041",
+          "obtainedMarks": 3,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-042",
+          "rollNumber": 4,
+          "studentName": "Reyansh Singh",
+          "fatherName": "Dinesh Das",
+          "uniqueId": "GIS2026-7A-0042",
+          "obtainedMarks": 10,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-043",
+          "rollNumber": 5,
+          "studentName": "Krishna Mishra",
+          "fatherName": "Gaurav Dubey",
+          "uniqueId": "GIS2026-7A-0043",
+          "obtainedMarks": 17,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-044",
+          "rollNumber": 6,
+          "studentName": "Ayaan Agarwal",
+          "fatherName": "Suresh Gupta",
+          "uniqueId": "GIS2026-7A-0044",
+          "obtainedMarks": 24,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-045",
+          "rollNumber": 7,
+          "studentName": "Dev Dubey",
+          "fatherName": "Deepak Agarwal",
+          "uniqueId": "GIS2026-7A-0045",
+          "obtainedMarks": 0,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-046",
+          "rollNumber": 8,
+          "studentName": "Vivaan Singh",
+          "fatherName": "Vikram Pandey",
+          "uniqueId": "GIS2026-7A-0046",
+          "obtainedMarks": 7,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-047",
+          "rollNumber": 9,
+          "studentName": "Yash Mishra",
+          "fatherName": "Pradeep Mishra",
+          "uniqueId": "GIS2026-7A-0047",
+          "obtainedMarks": 14,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-048",
+          "rollNumber": 10,
+          "studentName": "Dhruv Agarwal",
+          "fatherName": "Sanjay Srivastava",
+          "uniqueId": "GIS2026-7A-0048",
+          "obtainedMarks": 21,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-24T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class7-B-0-5",
+      "className": "Class 7",
+      "section": "B",
+      "subject": "Mathematics",
+      "testName": "Unit Test 1",
+      "date": "2026-07-12",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 8,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-049",
+          "rollNumber": 1,
+          "studentName": "Ayaan Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-7B-0049",
+          "obtainedMarks": 15,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-050",
+          "rollNumber": 2,
+          "studentName": "Dev Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-7B-0050",
+          "obtainedMarks": 1,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-051",
+          "rollNumber": 3,
+          "studentName": "Vivaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-7B-0051",
+          "obtainedMarks": 8,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-052",
+          "rollNumber": 4,
+          "studentName": "Yash Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-7B-0052",
+          "obtainedMarks": 15,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-053",
+          "rollNumber": 5,
+          "studentName": "Dhruv Gupta",
+          "fatherName": "Sanjay Pandey",
+          "uniqueId": "GIS2026-7B-0053",
+          "obtainedMarks": 1,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-054",
+          "rollNumber": 6,
+          "studentName": "Aditya Das",
+          "fatherName": "Ashish Mishra",
+          "uniqueId": "GIS2026-7B-0054",
+          "obtainedMarks": 8,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-055",
+          "rollNumber": 7,
+          "studentName": "Shaurya Srivastava",
+          "fatherName": "Dinesh Srivastava",
+          "uniqueId": "GIS2026-7B-0055",
+          "obtainedMarks": 15,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-056",
+          "rollNumber": 8,
+          "studentName": "Neil Pandey",
+          "fatherName": "Gaurav Singh",
+          "uniqueId": "GIS2026-7B-0056",
+          "obtainedMarks": 1,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-07-12T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class7-B-1-5",
+      "className": "Class 7",
+      "section": "B",
+      "subject": "Mathematics",
+      "testName": "Unit Test 2",
+      "date": "2026-08-19",
+      "academicYear": "2026-27",
+      "teacherId": "t-priya",
+      "totalStudents": 8,
+      "maxMarks": 20,
+      "entries": [
+        {
+          "studentId": "s-049",
+          "rollNumber": 1,
+          "studentName": "Ayaan Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-7B-0049",
+          "obtainedMarks": 19,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-050",
+          "rollNumber": 2,
+          "studentName": "Dev Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-7B-0050",
+          "obtainedMarks": 5,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-051",
+          "rollNumber": 3,
+          "studentName": "Vivaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-7B-0051",
+          "obtainedMarks": 12,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-052",
+          "rollNumber": 4,
+          "studentName": "Yash Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-7B-0052",
+          "obtainedMarks": 19,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-053",
+          "rollNumber": 5,
+          "studentName": "Dhruv Gupta",
+          "fatherName": "Sanjay Pandey",
+          "uniqueId": "GIS2026-7B-0053",
+          "obtainedMarks": 5,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-054",
+          "rollNumber": 6,
+          "studentName": "Aditya Das",
+          "fatherName": "Ashish Mishra",
+          "uniqueId": "GIS2026-7B-0054",
+          "obtainedMarks": 12,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-055",
+          "rollNumber": 7,
+          "studentName": "Shaurya Srivastava",
+          "fatherName": "Dinesh Srivastava",
+          "uniqueId": "GIS2026-7B-0055",
+          "obtainedMarks": 19,
+          "totalMarks": 20,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-056",
+          "rollNumber": 8,
+          "studentName": "Neil Pandey",
+          "fatherName": "Gaurav Singh",
+          "uniqueId": "GIS2026-7B-0056",
+          "obtainedMarks": 5,
+          "totalMarks": 20,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-19T15:30:00.000Z",
+      "isDemoSeed": true
+    },
+    {
+      "id": "prev-class7-B-2-5",
+      "className": "Class 7",
+      "section": "B",
+      "subject": "English",
+      "testName": "Reading Assessment",
+      "date": "2026-08-24",
+      "academicYear": "2026-27",
+      "teacherId": "t-neha",
+      "totalStudents": 8,
+      "maxMarks": 30,
+      "entries": [
+        {
+          "studentId": "s-049",
+          "rollNumber": 1,
+          "studentName": "Ayaan Gupta",
+          "fatherName": "Suresh Das",
+          "uniqueId": "GIS2026-7B-0049",
+          "obtainedMarks": 23,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-050",
+          "rollNumber": 2,
+          "studentName": "Dev Das",
+          "fatherName": "Deepak Dubey",
+          "uniqueId": "GIS2026-7B-0050",
+          "obtainedMarks": 30,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-051",
+          "rollNumber": 3,
+          "studentName": "Vivaan Srivastava",
+          "fatherName": "Vikram Gupta",
+          "uniqueId": "GIS2026-7B-0051",
+          "obtainedMarks": 6,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-052",
+          "rollNumber": 4,
+          "studentName": "Yash Pandey",
+          "fatherName": "Pradeep Agarwal",
+          "uniqueId": "GIS2026-7B-0052",
+          "obtainedMarks": 13,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-053",
+          "rollNumber": 5,
+          "studentName": "Dhruv Gupta",
+          "fatherName": "Sanjay Pandey",
+          "uniqueId": "GIS2026-7B-0053",
+          "obtainedMarks": 20,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-054",
+          "rollNumber": 6,
+          "studentName": "Aditya Das",
+          "fatherName": "Ashish Mishra",
+          "uniqueId": "GIS2026-7B-0054",
+          "obtainedMarks": 27,
+          "totalMarks": 30,
+          "remarks": "",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-055",
+          "rollNumber": 7,
+          "studentName": "Shaurya Srivastava",
+          "fatherName": "Dinesh Srivastava",
+          "uniqueId": "GIS2026-7B-0055",
+          "obtainedMarks": 3,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        },
+        {
+          "studentId": "s-056",
+          "rollNumber": 8,
+          "studentName": "Neil Pandey",
+          "fatherName": "Gaurav Singh",
+          "uniqueId": "GIS2026-7B-0056",
+          "obtainedMarks": 10,
+          "totalMarks": 30,
+          "remarks": "Please revise the concepts.",
+          "answerCopyUri": null,
+          "answerCopyPageCount": 0
+        }
+      ],
+      "submittedAt": "2026-08-24T15:30:00.000Z",
+      "isDemoSeed": true
+    }
+  ],
+  "helpTopics": [
+    {
+      "id": "h1",
+      "q": "How to take attendance?",
+      "a": "Choose class and section, then mark each student Present or Absent. Review the roster and confirm the demo submission."
+    },
+    {
+      "id": "h2",
+      "q": "How to enter test results?",
+      "a": "Choose class, section, subject and enter a test name. Add marks and optional remarks for each student, then review the result set."
+    },
+    {
+      "id": "h3",
+      "q": "How to scan an answer copy?",
+      "a": "Keep the camera open and capture pages in order. Pages are added automatically; generate a PDF, review the page images, then attach the file to the result draft."
+    },
+    {
+      "id": "h4",
+      "q": "How to review previous results?",
+      "a": "Open See Previous Results from Home and select a result set to view averages, high/low scores and student rankings."
+    },
+    {
+      "id": "h5",
+      "q": "How to update my profile?",
+      "a": "Open Profile, choose Edit Profile and update your contact, qualification or profile information. This demo stores edits only in app memory."
+    },
+    {
+      "id": "h6",
+      "q": "How to change password?",
+      "a": "Enter current password, new password and confirmation. Password changes are not connected until a real authentication service is integrated."
+    },
+    {
+      "id": "h7",
+      "q": "App not working?",
+      "a": "In a real release, contact school IT support. This UI prototype has no live helpdesk or server."
+    }
+  ],
+  "termsSections": [
+    {
+      "title": "Use of the App",
+      "body": "This teacher app is intended for authorized school staff. Keep student information confidential and use it only for school responsibilities."
+    },
+    {
+      "title": "Student Data",
+      "body": "Access student records only when required for assigned work. Do not export or share them through unauthorized channels."
+    },
+    {
+      "title": "Acceptable Use",
+      "body": "Do not share your login credentials or leave the app accessible on a shared device."
+    },
+    {
+      "title": "Demo Notice",
+      "body": "The current prototype stores drafts only in memory. No record, password or scanned copy is sent to a server."
+    }
+  ],
+  "privacySections": [
+    {
+      "title": "Information We Use",
+      "body": "The production application may process teacher profile information, attendance and assessment records required for school operations."
+    },
+    {
+      "title": "Data Security",
+      "body": "Access control, encryption, audit trails and retention rules must be implemented and reviewed before production use."
+    },
+    {
+      "title": "Camera and Files",
+      "body": "The scanner requires camera access to capture answer-sheet pages. Captured files remain local in this demo."
+    },
+    {
+      "title": "Demo Privacy Notice",
+      "body": "This prototype uses fictional records. Do not capture real students or enter personal information during testing."
+    }
+  ]
+}

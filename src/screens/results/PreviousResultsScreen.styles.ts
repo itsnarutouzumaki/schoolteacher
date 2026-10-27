@@ -1,0 +1,2 @@
+import {StyleSheet} from 'react-native';import {C} from '../../theme';
+export const styles=StyleSheet.create({filters:{gap:6},resultCard:{flexDirection:'row',alignItems:'center',gap:10,padding:12},resultIcon:{width:42,height:42,borderRadius:12,backgroundColor:C.purpleSoft,alignItems:'center',justifyContent:'center'},resultText:{flex:1,gap:2},rightMeta:{alignItems:'flex-end',gap:5},empty:{padding:24,alignItems:'center'}});

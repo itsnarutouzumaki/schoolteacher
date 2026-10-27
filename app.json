@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Greenwood Teacher",
+    "slug": "greenwood-international-school-teacher",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "greenwood-teacher",
+    "backgroundColor": "#F4F7FC",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#073C88"
+    },
+    "notification": {
+      "icon": "./assets/notification.png",
+      "color": "#075DCE"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.greenwoodinternational.teacher",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Greenwood Teacher uses the camera to scan students' answer sheets.",
+        "NSPhotoLibraryUsageDescription": "Allow Greenwood Teacher to select a teacher profile photo."
+      }
+    },
+    "android": {
+      "package": "com.greenwoodinternational.teacher",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#073C88"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "react-native-document-scanner-plugin",
+        {
+          "cameraPermission": "Greenwood Teacher uses the camera to detect, crop and scan student answer sheets on this device."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Greenwood Teacher to scan answer sheets.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Greenwood Teacher to choose a profile photo."
+        }
+      ]
+    ],
+    "extra": {
+      "appRole": "teacher",
+      "demoMode": true
+    }
+  }
+}
