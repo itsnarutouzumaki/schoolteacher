@@ -1,27 +1,29 @@
 # Greenwood Teacher App
 
-React Native + Expo teacher-facing prototype for Greenwood International School. This repository is UI-first and uses local JSON seed data. It does **not** connect to a backend, authenticate real teachers, or permanently save records.
+React Native CLI teacher-facing prototype for Greenwood International School. The app uses local JSON seed data. It does **not** connect to a backend, authenticate real teachers, or permanently save records.
 
 ## Requirements
 
-- Node.js **22.13 or newer** (Expo SDK 57 requirement).
+- Node.js **22.11 or newer**.
 - npm.
-- For the native document scanner: Android Studio + Android SDK/JDK for Android, or macOS + Xcode for iOS.
+- Android Studio, Android SDK, and JDK 17 for Android builds.
+- macOS and Xcode for iOS builds and CocoaPods installation.
 
 ## Install and run
 
 ```bash
 npm install
-npx expo install --fix
 npm run verify
-npm run android
+npm start
 ```
 
-`npm run android` builds and launches the native Android app. To use iOS, run `npm run ios` on macOS. For Metro only, run `npm start` after the native development app is installed.
+In another terminal, run `npm run android` or, on macOS, `npm run ios`. Native modules are auto-linked by the React Native CLI. For iOS, run `cd ios && pod install` after installing dependencies and whenever native dependencies change.
 
-The built-in document scanner uses `react-native-document-scanner-plugin` for on-device edge detection/cropping. It **does not run inside Expo Go**; use the `expo run:android` / `expo run:ios` development build path. Before invoking the native scanner, the app requests camera permission because `expo-camera` also declares the Android camera permission. The native scanner can return multiple pages in one session; no numeric page cap is configured. Captured images are compressed to JPEG and downscaled to at most 1800px wide for local PDF generation. Expo Go can be used to inspect most screens and the in-app camera fallback, but automatic edge detection/cropping requires the native build.
+This is a bare React Native CLI project; Expo and Expo Go are not used. Native Android and iOS projects live in `android/` and `ios/`.
 
-If dependency installation fails due to network/DNS restrictions, retry `npm install` from a machine that can access the npm registry. Do not remove or upgrade Expo/RN packages blindly; SDK 57 targets React Native 0.86, React 19.2.3 and Node 22.13+.
+The on-device document scanner uses `react-native-document-scanner-plugin` for multi-page edge detection and cropping. If the scanner is unavailable, the manual fallback opens the native camera capture UI. Captured images are compressed to JPEG and downscaled to at most 1800px wide before local PDF generation. The app uses native image crop/picker, file access, PDF generation, and share-sheet modules.
+
+Windows supports Android development. iOS builds and CocoaPods require macOS with Xcode.
 
 ## Main flows
 
@@ -40,24 +42,26 @@ If dependency installation fails due to network/DNS restrictions, retry `npm ins
 - `src/components/**`: shared UI, screen shell, bottom navigation, dialogs and toast host.
 - `src/theme.ts`: shared theme tokens.
 - `src/i18n`: centralized English/Hindi translations.
-- `src/data/school-config.json`: school branding, about content, photos/videos and theme.
+- `../shared/school-config.json`: shared school identity, theme, academic defaults, media metadata and supported languages.
+- `src/config/schoolConfig.ts`: typed access to the shared JSON; Metro is configured to watch the repository-level `shared/` directory.
+- `src/data/app-config.json`: teacher-app-specific display name, version and native identifiers.
 - `src/data/teacher-mock-data.json`: teacher, class lists, 74 fictional students, schedules, notifications and previous result sets.
 - `src/services/mockTeacherRepository.ts`: read-only mock-data adapter.
 - `src/services/teacherService.ts`: local business rules and validations.
 - `src/services/teacherApi.contract.ts`: typed future backend boundary; there is deliberately no fake API implementation.
 - `src/services/pdfService.ts`: local PDF creation, temporary-file cleanup, and OS share/save flow.
-- `scripts/**`: syntax, import, route/style, translation, data, logic and Expo config checks.
+- `scripts/**`: syntax, import, route/style, translation, data, logic and native project checks.
 
 ## School branding
 
-Edit `src/data/school-config.json`. Then run:
+Edit `../shared/school-config.json` for school-wide static settings. Edit `src/data/app-config.json` only for teacher-app identity and native identifiers. Then run:
 
 ```bash
 npm run config:apply
 npm run config:check
 ```
 
-This synchronizes the native app name, slug and Android/iOS identifiers. Replacing the included icon/adaptive-icon/splash/notification image files is a separate design step when white-labeling the app.
+This synchronizes the app-specific display name and Android/iOS identifiers in the native projects. The supplied logo is bundled directly in the UI and in the committed native launcher assets for both apps.
 
 ## Verification
 
@@ -65,7 +69,7 @@ This synchronizes the native app name, slug and Android/iOS identifiers. Replaci
 npm run verify
 ```
 
-This runs static syntax checks, local-import checks, registered-route and style-companion checks, EN/HI translation-key checks, mock-data checks, logic smoke tests, Expo asset/dependency checks, and TypeScript type checking. Type/device checks require a successful dependency installation and should also be completed on a real phone because camera/scanner behavior cannot be proven by static checks.
+This runs static syntax checks, local-import checks, registered-route and style-companion checks, EN/HI translation-key checks, mock-data checks, logic smoke tests, native project and package checks, and TypeScript type checking. Native/device checks should also be completed on a real phone because camera/scanner behavior cannot be proven by static checks.
 
 ## Demo limitations (important)
 

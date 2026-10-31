@@ -2,6 +2,7 @@ import React, { createContext, useCallback, useContext, useMemo, useState } from
 import { mockTeacherRepository } from './services/mockTeacherRepository';
 import type { AttendanceDraft, ClassSection, ResultDraft, SavedResult, ScanPage, Student, TeacherNotice, TeacherProfile, ToastMessage } from './types';
 import type { Route, ScreenName } from './types';
+import { loadPushNotifications, mergeLoadedNotifications, savePushNotifications } from './services/notificationStore';
 
 type AppValue = {
   school: typeof mockTeacherRepository.school;
@@ -46,6 +47,7 @@ const seedData = mockTeacherRepository;
 export function AppProvider({ children, navigation }: { children: React.ReactNode; navigation: Omit<AppValue, 'school'|'teacher'|'setTeacher'|'classSections'|'studentsByClass'|'subjectsByClass'|'timetable'|'teachers'|'notifications'|'setNotifications'|'attendanceDraft'|'setAttendanceDraft'|'resultDraft'|'setResultDraft'|'savedResults'|'setSavedResults'|'scanPages'|'setScanPages'|'pendingPdfUri'|'setPendingPdfUri'|'attendanceSubmissions'|'setAttendanceSubmissions'|'showToast'|'toast'|'setToast'|'logoutDialogOpen'|'setLogoutDialogOpen'> }) {
   const [teacher, setTeacher] = useState<TeacherProfile>(() => ({ ...seedData.teacher }));
   const [notifications, setNotifications] = useState<TeacherNotice[]>(() => seedData.notifications.map((n: TeacherNotice) => ({ ...n })));
+  const [notificationsHydrated, setNotificationsHydrated] = useState(false);
   const [attendanceDraft, setAttendanceDraft] = useState<AttendanceDraft | null>(null);
   const [resultDraft, setResultDraft] = useState<ResultDraft | null>(null);
   const [savedResults, setSavedResults] = useState<SavedResult[]>(() => seedData.previousResults.map((r: SavedResult) => ({ ...r })));
@@ -58,6 +60,26 @@ export function AppProvider({ children, navigation }: { children: React.ReactNod
   const showToast = useCallback((message: Omit<ToastMessage, 'id'>) => {
     setToast({ ...message, id: ++toastId.current });
   }, []);
+  React.useEffect(() => {
+    let active = true;
+    loadPushNotifications()
+      .then(stored => {
+        if (active) {
+          setNotifications(current => mergeLoadedNotifications(current, stored));
+          setNotificationsHydrated(true);
+        }
+      })
+      .catch(error => {
+        console.error('Unable to load stored push notifications.', error);
+      });
+    return () => { active = false; };
+  }, []);
+  React.useEffect(() => {
+    if (!notificationsHydrated) return;
+    savePushNotifications(notifications).catch(error => {
+      console.error('Unable to save push notification records.', error);
+    });
+  }, [notifications, notificationsHydrated]);
   const value = useMemo<AppValue>(() => ({
     ...navigation,
     school: seedData.school,

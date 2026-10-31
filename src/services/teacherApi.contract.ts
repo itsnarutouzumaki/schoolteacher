@@ -1,4 +1,5 @@
 import type { AttendanceStatus, ClassSection, SavedResult, Student } from '../types';
+import type { PushDeviceRegistration } from './notificationApi.contract';
 
 export type AttendanceSubmissionPayload = {
   className: string;
@@ -18,4 +19,6 @@ export interface TeacherApiContract {
   getStudents(className: string, section: string): Promise<Student[]>;
   submitAttendance(payload: AttendanceSubmissionPayload): Promise<{ submissionId: string }>;
   submitResults(payload: ResultSubmissionPayload): Promise<{ resultId: string }>;
+  registerNotificationDevice(registration: PushDeviceRegistration): Promise<void>;
+  unregisterNotificationDevice(token: string): Promise<void>;
 }

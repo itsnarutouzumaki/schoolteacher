@@ -1,0 +1,15 @@
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/CMakeFiles/appmodules.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/CMakeFiles/edit_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/DocumentScannerSpec_autolinked_build/CMakeFiles/react_codegen_DocumentScannerSpec.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/DocumentScannerSpec_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/DocumentScannerSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/HtmlToPdfSpec_autolinked_build/CMakeFiles/react_codegen_HtmlToPdfSpec.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/HtmlToPdfSpec_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/HtmlToPdfSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/RNCImageCropPickerSpec_autolinked_build/CMakeFiles/react_codegen_RNCImageCropPickerSpec.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/RNCImageCropPickerSpec_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/RNCImageCropPickerSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/RNShareSpec_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher-app/android/app/.cxx/Debug/242c336n/armeabi-v7a/RNShareSpec_autolinked_build/CMakeFiles/rebuild_cache.dir

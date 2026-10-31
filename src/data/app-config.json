@@ -1,0 +1,7 @@
+{
+  "appName": "Greenwood Teacher",
+  "version": "1.0.0",
+  "demoMode": true,
+  "androidPackage": "com.greenwoodinternational.teacher",
+  "iosBundleIdentifier": "com.greenwoodinternational.teacher"
+}

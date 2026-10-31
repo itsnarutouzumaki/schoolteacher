@@ -54,14 +54,31 @@ export function ToastHost() {
   useEffect(() => { if (!toast) return; const id = setTimeout(() => setToast((v) => v?.id === toast.id ? null : v), 3000); return () => clearTimeout(id); }, [toast, setToast]);
   if (!toast) return null;
   const bg = toast.tone === 'error' ? C.danger : toast.tone === 'success' ? C.success : toast.tone === 'warning' ? '#8A5A13' : C.primaryDark;
-  return <Pressable onPress={() => setToast(null)} style={[uiStyles.toast, { backgroundColor: bg }]} accessibilityLabel={toast.title}><AppText color="#FFFFFF" weight="bold" size={13}>{toast.title}</AppText>{toast.message ? <AppText color="#EAF3FF" size={11}>{toast.message}</AppText> : null}</Pressable>;
+  return <Pressable onPress={() => setToast(null)} style={[uiStyles.toast, { backgroundColor: bg }]} accessibilityLabel={toast.title}><AppText color="#FFFFFF" weight="bold" size={13}>{toast.title}</AppText>{toast.message ? <AppText color={C.blueSoft} size={11}>{toast.message}</AppText> : null}</Pressable>;
 }
 export function ConfirmDialog({ visible, title, message, cancelTitle, confirmTitle, onCancel, onConfirm, danger = false }: { visible: boolean; title: string; message: string; cancelTitle: string; confirmTitle: string; onCancel: () => void; onConfirm: () => void; danger?: boolean }) {
   return <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}><View style={uiStyles.modalBackdrop}><Pressable style={uiStyles.backdropTouch} onPress={onCancel} /><View style={uiStyles.dialog}><AppText size={18} weight="bold">{title}</AppText><AppText color={C.muted} style={uiStyles.dialogBody}>{message}</AppText><View style={uiStyles.dialogActions}><Button title={cancelTitle} variant="outline" onPress={onCancel} style={uiStyles.dialogButton}/><Button title={confirmTitle} variant={danger ? 'danger' : 'primary'} onPress={onConfirm} style={uiStyles.dialogButton}/></View></View></View></Modal>;
 }
-export function BottomTabs({ active, onPress }: { active: 'Home'|'Notifications'|'Profile'; onPress: (key: 'Home'|'Notifications'|'Profile') => void }) {
+export function BellIcon({ color }: { color: string }) {
+  return <View style={uiStyles.bellIcon}>
+    <View style={[uiStyles.bellTop, { borderColor: color }]} />
+    <View style={[uiStyles.bellBody, { borderColor: color }]} />
+    <View style={[uiStyles.bellRim, { backgroundColor: color }]} />
+    <View style={[uiStyles.bellClapper, { backgroundColor: color }]} />
+  </View>;
+}
+export function BottomTabs({ active, onPress, profileName, profilePhotoUrl, hasUnreadNotifications }: { active: 'Home'|'Notifications'|'Profile'; onPress: (key: 'Home'|'Notifications'|'Profile') => void; profileName: string; profilePhotoUrl: string; hasUnreadNotifications: boolean }) {
   const { t } = useI18n();
   const tabs: Array<{ key: 'Home'|'Notifications'|'Profile'; icon: string; label: string }> = [{ key:'Home', icon:'⌂', label:t('home') }, { key:'Notifications', icon:'♧', label:t('notifications') }, { key:'Profile', icon:'◉', label:t('profile') }];
-  return <View style={uiStyles.tabs}>{tabs.map(tab => <Pressable key={tab.key} onPress={() => onPress(tab.key)} accessibilityRole="button" accessibilityLabel={tab.label} style={uiStyles.tab}>{<Text style={[uiStyles.tabIcon, { color: active === tab.key ? C.primary : C.muted }]}>{tab.icon}</Text>}<Text style={[uiStyles.tabLabel,{color:active === tab.key?C.primary:C.muted,fontWeight:active===tab.key?'700':'500'}]}>{tab.label}</Text></Pressable>)}</View>;
+  return <View style={uiStyles.tabs}>{tabs.map(tab => {
+    const color = active === tab.key ? C.primary : C.muted;
+    return <Pressable key={tab.key} onPress={() => onPress(tab.key)} accessibilityRole="button" accessibilityLabel={tab.label} style={uiStyles.tab}>
+      {tab.key === 'Home' ? <Text style={[uiStyles.tabIcon, { color }]}>{tab.icon}</Text> : tab.key === 'Notifications' ? <View>
+        <BellIcon color={color}/>
+        {hasUnreadNotifications ? <View style={uiStyles.notificationIndicator}/> : null}
+      </View> : <Avatar uri={profilePhotoUrl} name={profileName} size={22}/>}
+      <Text style={[uiStyles.tabLabel,{color,fontWeight:active===tab.key?'700':'500'}]}>{tab.label}</Text>
+    </Pressable>;
+  })}</View>;
 }
 export function LoadingButton({ title, onPress, loading }: { title: string; onPress: () => void; loading: boolean }) { return <Button title={title} onPress={onPress} disabled={loading} icon={loading ? undefined : undefined} />; }

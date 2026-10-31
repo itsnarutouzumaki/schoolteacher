@@ -1,8 +1,17 @@
 node_modules/
-.expo/
 dist/
 web-build/
 *.log
 .DS_Store
 .env*
 ! .env.example
+android/.gradle/
+android/build/
+android/app/build/
+ios/Pods/
+ios/build/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+android/app/google-services.json
+ios/GoogleService-Info.plist
+ios/GreenwoodTeacher/GoogleService-Info.plist

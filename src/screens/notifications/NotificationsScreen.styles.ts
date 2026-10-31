@@ -1,2 +1,22 @@
-import {StyleSheet} from 'react-native';import {C} from '../../theme';
-export const styles=StyleSheet.create({filters:{flexDirection:'row',gap:7},filter:{flex:1,alignItems:'center',justifyContent:'center',paddingVertical:9,borderRadius:10,backgroundColor:'#FFFFFF',borderWidth:1,borderColor:C.border},filterSelected:{backgroundColor:C.primary,borderColor:C.primary},item:{flexDirection:'row',gap:10},unread:{backgroundColor:'#F7FAFF',borderColor:'#CDE0FA'},iconBox:{width:40,height:40,borderRadius:12,alignItems:'center',justifyContent:'center'},green:{backgroundColor:C.successSoft},purple:{backgroundColor:C.purpleSoft},orange:{backgroundColor:C.orangeSoft},blue:{backgroundColor:C.blueSoft},copy:{flex:1,gap:3},titleRow:{flexDirection:'row',alignItems:'center',gap:5},title:{flex:1},unreadDot:{width:6,height:6,borderRadius:3,backgroundColor:C.primary},empty:{padding:24,alignItems:'center'}});
+import { StyleSheet } from 'react-native';
+import { C } from '../../theme';
+
+export const styles = StyleSheet.create({
+  actions: { flexDirection: 'row', gap: 8, marginTop: 10 },
+  actionButton: { flex: 1 },
+  filters: { flexDirection: 'row', gap: 7 },
+  filter: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingVertical: 9, borderRadius: 10, backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: C.border },
+  filterSelected: { backgroundColor: C.primary, borderColor: C.primary },
+  item: { flexDirection: 'row', gap: 10 },
+  unread: { backgroundColor: '#F7FAFF', borderColor: '#CDE0FA' },
+  iconBox: { width: 40, height: 40, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
+  green: { backgroundColor: C.successSoft },
+  purple: { backgroundColor: C.purpleSoft },
+  orange: { backgroundColor: C.orangeSoft },
+  blue: { backgroundColor: C.blueSoft },
+  copy: { flex: 1, gap: 3 },
+  titleRow: { flexDirection: 'row', alignItems: 'center', gap: 5 },
+  title: { flex: 1 },
+  unreadDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: C.primary },
+  empty: { padding: 24, alignItems: 'center' },
+});

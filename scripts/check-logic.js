@@ -13,7 +13,8 @@ require.extensions['.ts'] = (loadedModule, filename) => {
 };
 const servicePath = path.join(root, 'src/services/teacherService.ts');
 const service = require(servicePath);
-const config = JSON.parse(fs.readFileSync(path.join(root, 'src/data/school-config.json'), 'utf8'));
+const notificationService = require(path.join(root, 'src/services/notificationPayload.ts'));
+const config = JSON.parse(fs.readFileSync(path.resolve(root, '..', 'shared/school-config.json'), 'utf8'));
 const seed = JSON.parse(fs.readFileSync(path.join(root, 'src/data/teacher-mock-data.json'), 'utf8'));
 
 const attendance = service.makeAttendanceDraft('Class 5', 'A');
@@ -44,5 +45,20 @@ assert.equal(service.sortResultEntries(saved, 'roll')[0].rollNumber, Math.min(..
 assert.equal(service.sortResultEntries(saved, 'marks')[0].obtainedMarks, Math.max(...saved.entries.map(entry => entry.obtainedMarks)));
 assert.equal(service.getSubjects('Class 5').length > 0, true);
 assert.equal(seed.classes.length > 0, true);
-assert.equal(config.app.defaultAcademicYear, resultDraft.academicYear);
-console.log('Logic smoke tests passed: attendance draft, result draft, mark validation, conversion, statistics, sorting and subject lookup.');
+assert.equal(config.academic.defaultAcademicYear, resultDraft.academicYear);
+const remoteNotice = notificationService.normalizeRemoteNotification({
+  messageId: 'message-123',
+  notification: { title: 'School closed', body: 'Classes are cancelled today.' },
+  data: { eventId: 'event-123', type: 'general', route: 'Home', routeParams: '{"date":"2026-10-31"}' },
+}, Date.parse('2026-10-31T12:00:00Z'));
+assert.equal(remoteNotice.id, 'event-123');
+assert.equal(remoteNotice.title, 'School closed', 'FCM notification subject should become the displayed title');
+assert.equal(remoteNotice.message, 'Classes are cancelled today.', 'FCM body should be retained');
+assert.equal(remoteNotice.route, 'Home');
+assert.equal(notificationService.notificationRoute(remoteNotice).params.date, '2026-10-31');
+assert.equal(notificationService.normalizeRemoteNotification({ data: { route: 'Login' } }).route, undefined, 'untrusted payload routes must be rejected');
+assert.equal(notificationService.notificationRoute(remoteNotice).name, 'Home');
+assert.equal(notificationService.notificationRoute({ ...remoteNotice, route: undefined }).name, 'Notifications');
+assert.equal(notificationService.mergeNotificationRecords([remoteNotice], [{ ...remoteNotice, read: true }])[0].read, true);
+assert.equal(notificationService.createLocalTestNotification(1000).source, 'local');
+console.log('Logic smoke tests passed: attendance, results, push payload normalization, safe routes, deduplication and local notification records.');

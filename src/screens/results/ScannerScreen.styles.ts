@@ -1,3 +1,16 @@
 import { StyleSheet } from 'react-native';
 import { C } from '../../theme';
-export const styles=StyleSheet.create({notice:{gap:4,backgroundColor:C.blueSoft},scannerLaunch:{alignItems:'center',gap:10,padding:20},scannerSymbol:{width:58,height:58,borderRadius:18,backgroundColor:C.primary,alignItems:'center',justifyContent:'center'},permission:{alignItems:'center',gap:12,padding:22},cameraWrap:{height:410,borderRadius:18,overflow:'hidden',backgroundColor:'#081827'},camera:{flex:1,justifyContent:'space-between'},documentFrame:{position:'absolute',left:'7%',right:'7%',top:'7%',bottom:'25%',borderWidth:1,borderColor:'rgba(255,255,255,0.55)',borderRadius:5,alignItems:'center',justifyContent:'center',padding:8},cornerTopLeft:{position:'absolute',top:-2,left:-2,width:28,height:28,borderLeftWidth:4,borderTopWidth:4,borderColor:'#3DABFF'},cornerTopRight:{position:'absolute',top:-2,right:-2,width:28,height:28,borderRightWidth:4,borderTopWidth:4,borderColor:'#3DABFF'},cornerBottomLeft:{position:'absolute',bottom:-2,left:-2,width:28,height:28,borderLeftWidth:4,borderBottomWidth:4,borderColor:'#3DABFF'},cornerBottomRight:{position:'absolute',bottom:-2,right:-2,width:28,height:28,borderRightWidth:4,borderBottomWidth:4,borderColor:'#3DABFF'},cameraControls:{alignItems:'center',padding:16,gap:6,backgroundColor:'rgba(0,0,0,0.24)'},shutterOuter:{width:66,height:66,borderRadius:33,borderWidth:4,borderColor:'#FFFFFF',alignItems:'center',justifyContent:'center'},shutterInner:{width:48,height:48,borderRadius:24,backgroundColor:'#FFFFFF'},pageHeader:{gap:2},thumbRow:{flexDirection:'row',flexWrap:'wrap',gap:10},thumbWrap:{width:72,alignItems:'center',gap:3},thumbnail:{width:64,height:82,borderRadius:8,backgroundColor:C.blueSoft,borderWidth:1,borderColor:C.border},deleteThumb:{position:'absolute',right:0,top:-4,width:20,height:20,borderRadius:10,backgroundColor:C.danger,alignItems:'center',justifyContent:'center'},emptyPages:{padding:18,alignItems:'center'}});
+
+export const styles = StyleSheet.create({
+  notice: { gap: 4, backgroundColor: C.blueSoft },
+  modeRow: { flexDirection: 'row', gap: 9 },
+  modeButton: { flex: 1, minHeight: 42, borderRadius: 12, borderWidth: 1, borderColor: C.border, backgroundColor: C.surface, justifyContent: 'center', paddingHorizontal: 8 },
+  activeMode: { borderColor: C.primary, backgroundColor: C.primary },
+  permission: { alignItems: 'center', gap: 12, padding: 22 },
+  pageHeader: { gap: 2 },
+  thumbRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+  thumbWrap: { width: 72, alignItems: 'center', gap: 3 },
+  thumbnail: { width: 64, height: 82, borderRadius: 8, backgroundColor: C.blueSoft, borderWidth: 1, borderColor: C.border },
+  deleteThumb: { position: 'absolute', right: 0, top: -4, width: 20, height: 20, borderRadius: 10, backgroundColor: C.danger, alignItems: 'center', justifyContent: 'center' },
+  emptyPages: { padding: 18, alignItems: 'center' },
+});

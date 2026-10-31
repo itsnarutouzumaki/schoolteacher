@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BackHandler, StatusBar, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { I18nProvider } from './src/i18n/I18nContext';
 import { AppProvider, useApp } from './src/app-context';
 import type { Route, ScreenName } from './src/types';
@@ -17,6 +18,7 @@ import SuccessScreen from './src/screens/results/SuccessScreen';
 import ResultSetupScreen from './src/screens/results/ResultSetupScreen';
 import ResultEntryScreen from './src/screens/results/ResultEntryScreen';
 import ScannerScreen from './src/screens/results/ScannerScreen';
+import CapturedPagesReviewScreen from './src/screens/results/CapturedPagesReviewScreen';
 import PdfPreviewScreen from './src/screens/results/PdfPreviewScreen';
 import ResultReviewScreen from './src/screens/results/ResultReviewScreen';
 import PreviousResultsScreen from './src/screens/results/PreviousResultsScreen';
@@ -31,10 +33,68 @@ import LegalScreen from './src/screens/profile/LegalScreen';
 import TeachersScreen from './src/screens/school/TeachersScreen';
 import TeacherDetailScreen from './src/screens/school/TeacherDetailScreen';
 import { styles } from './App.styles';
+import type { TeacherNotice } from './src/types';
+import {
+  createTeacherNotificationChannel,
+  subscribeToNotificationEvents,
+} from './src/services/notificationService';
+import {
+  consumePendingNotificationOpen,
+  upsertStoredPushNotification,
+} from './src/services/notificationStore';
+import { notificationRoute, upsertNotificationRecord } from './src/services/notificationPayload';
 
 function TeacherShell() {
-  const { stack, currentRoute, isDemoOpen, setIsDemoOpen, resetTo, logoutDialogOpen, setLogoutDialogOpen } = useApp();
+  const { stack, currentRoute, isDemoOpen, setIsDemoOpen, resetTo, logoutDialogOpen, setLogoutDialogOpen, teacher, notifications, setNotifications } = useApp();
   const { t } = useI18n();
+  const pendingNotification = useRef<TeacherNotice | null>(null);
+  const handledNotificationIds = useRef(new Set<string>());
+  const receiveNotification = useCallback(async (notification: TeacherNotice) => {
+    await upsertStoredPushNotification(notification);
+    setNotifications(previous => upsertNotificationRecord(previous, notification));
+  }, [setNotifications]);
+  const openNotification = useCallback(async (notification: TeacherNotice) => {
+    if (handledNotificationIds.current.has(notification.id)) return;
+    handledNotificationIds.current.add(notification.id);
+    if (handledNotificationIds.current.size > 100) {
+      const oldest = handledNotificationIds.current.values().next().value;
+      if (oldest) handledNotificationIds.current.delete(oldest);
+    }
+    const readNotification = { ...notification, read: true };
+    await upsertStoredPushNotification(readNotification);
+    setNotifications(previous => upsertNotificationRecord(previous, readNotification));
+    if (!isDemoOpen) {
+      pendingNotification.current = readNotification;
+      return;
+    }
+    const route = notificationRoute(readNotification);
+    resetTo(route.name, route.params);
+  }, [isDemoOpen, resetTo, setNotifications]);
+  useEffect(() => {
+    createTeacherNotificationChannel().catch(error => {
+      console.error('Unable to configure the teacher notification channel.', error);
+    });
+    const unsubscribe = subscribeToNotificationEvents({
+      onNotification: receiveNotification,
+      onOpen: openNotification,
+    });
+    let active = true;
+    consumePendingNotificationOpen()
+      .then(notification => {
+        if (active && notification) void openNotification(notification);
+      })
+      .catch(error => console.error('Unable to restore the pending notification action.', error));
+    return () => {
+      active = false;
+      unsubscribe();
+    };
+  }, [openNotification, receiveNotification]);
+  useEffect(() => {
+    if (!isDemoOpen || !pendingNotification.current) return;
+    const route = notificationRoute(pendingNotification.current);
+    pendingNotification.current = null;
+    resetTo(route.name, route.params);
+  }, [isDemoOpen, resetTo]);
   const renderScreen = () => {
     switch (currentRoute.name) {
       case 'Login': return <LoginScreen />;
@@ -48,6 +108,7 @@ function TeacherShell() {
       case 'ResultSetup': return <ResultSetupScreen />;
       case 'ResultEntry': return <ResultEntryScreen />;
       case 'Scanner': return <ScannerScreen />;
+      case 'CapturedPagesReview': return <CapturedPagesReviewScreen />;
       case 'PdfPreview': return <PdfPreviewScreen />;
       case 'ResultReview': return <ResultReviewScreen />;
       case 'PreviousResults': return <PreviousResultsScreen />;
@@ -65,14 +126,14 @@ function TeacherShell() {
       default: return <HomeScreen />;
     }
   };
-  const hideTabs = ['Login','ForgotPassword','Scanner','PdfPreview'].includes(currentRoute.name);
+  const hideTabs = ['Login','ForgotPassword','Scanner','CapturedPagesReview','PdfPreview'].includes(currentRoute.name);
   const showTabs = isDemoOpen && !hideTabs;
   const activeTab: 'Home'|'Notifications'|'Profile' = currentRoute.name === 'Notifications' ? 'Notifications' : ['MyProfile','EditProfile','ChangePassword','HelpSupport','Terms','Privacy'].includes(currentRoute.name) ? 'Profile' : 'Home';
   const onTabPress = (tab:'Home'|'Notifications'|'Profile') => { if(tab==='Home')resetTo('Home'); if(tab==='Notifications')resetTo('Notifications'); if(tab==='Profile')resetTo('MyProfile'); };
   return <View style={styles.shell}>
-    <StatusBar barStyle="light-content" backgroundColor={C.primaryDark}/>
+    <StatusBar barStyle="light-content" backgroundColor={C.primaryDark} translucent={false}/>
     <View style={styles.screen}>{renderScreen()}</View>
-    {showTabs?<BottomTabs active={activeTab} onPress={onTabPress}/>:null}
+    {showTabs?<BottomTabs active={activeTab} onPress={onTabPress} profileName={teacher.name} profilePhotoUrl={teacher.photoUrl} hasUnreadNotifications={notifications.some(notification=>!notification.read)}/>:null}
     <ToastHost/>
     <ConfirmDialog visible={logoutDialogOpen} title={t('logout')} message={`${t('logoutConfirm')} ${t('logoutInfo')}`} cancelTitle={t('cancel')} confirmTitle={t('confirmLogout')} danger onCancel={()=>setLogoutDialogOpen(false)} onConfirm={()=>{setLogoutDialogOpen(false);setIsDemoOpen(false);resetTo('Login');}}/>
   </View>;
@@ -96,5 +157,5 @@ export default function App() {
     return ()=>subscription.remove();
   },[stack,isDemoOpen]);
   const navigation=useMemo(()=>({stack,currentRoute,navigate,replace,goBack,resetTo,popTo,isDemoOpen,setIsDemoOpen}),[stack,currentRoute,navigate,replace,goBack,resetTo,popTo,isDemoOpen]);
-  return <I18nProvider><AppProvider navigation={navigation}><TeacherShell/></AppProvider></I18nProvider>;
+  return <SafeAreaProvider><I18nProvider><AppProvider navigation={navigation}><TeacherShell/></AppProvider></I18nProvider></SafeAreaProvider>;
 }

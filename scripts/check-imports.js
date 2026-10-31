@@ -7,7 +7,7 @@ const extensions = ['.ts', '.tsx', '.js', '.jsx', '.json', '.png', '.jpg', '.jpe
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory() && !['node_modules', '.expo', '.git'].includes(entry.name)) walk(full);
+    if (entry.isDirectory() && !['node_modules', '.git'].includes(entry.name)) walk(full);
     else if (entry.isFile() && /\.(ts|tsx|js|jsx)$/.test(entry.name)) files.push(full);
   }
 }

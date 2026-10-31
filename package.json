@@ -2,40 +2,51 @@
   "name": "greenwood-teacher-app",
   "version": "1.0.0",
   "private": true,
-  "main": "expo/AppEntry",
+  "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "typecheck": "tsc --noEmit",
     "verify:syntax": "node scripts/check-syntax.js",
     "verify:routes": "node scripts/check-routes.js",
     "verify:i18n": "node scripts/check-translations.js",
     "verify:data": "node scripts/check-data.js",
     "verify": "npm run verify:syntax && npm run verify:imports && npm run verify:routes && npm run verify:i18n && npm run verify:data && npm run verify:logic && npm run verify:scanner && npm run verify:config && npm run typecheck",
-    "config:check": "npx expo config --type public",
+    "config:check": "npm run verify:config",
     "config:apply": "node scripts/apply-school-config.js",
     "verify:logic": "node scripts/check-logic.js",
     "verify:scanner": "node scripts/check-scanner.js",
     "verify:imports": "node scripts/check-imports.js",
-    "verify:config": "node scripts/check-config.js",
-    "start:expo-go": "expo start",
-    "prebuild": "expo prebuild"
+    "verify:config": "node scripts/check-config.js"
   },
   "dependencies": {
-    "expo": "~57.0.31",
-    "expo-camera": "~57.0.3",
-    "expo-file-system": "~57.0.7",
-    "expo-image-manipulator": "~57.0.17",
-    "expo-print": "~57.0.2",
-    "expo-sharing": "~57.0.24",
+    "@notifee/react-native": "^9.1.8",
+    "@react-native-async-storage/async-storage": "^3.1.1",
+    "@react-native-firebase/app": "^27.1.0",
+    "@react-native-firebase/messaging": "^27.1.0",
     "react": "19.2.3",
     "react-native": "0.86.0",
-    "expo-image-picker": "~57.0.20",
-    "react-native-document-scanner-plugin": "2.0.4"
+    "react-native-document-scanner-plugin": "2.0.4",
+    "react-native-fs": "^2.20.0",
+    "react-native-html-to-pdf": "^1.3.0",
+    "react-native-image-crop-picker": "^0.52.0",
+    "react-native-image-resizer": "^1.4.5",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-share": "^12.3.1"
   },
   "devDependencies": {
+    "@react-native-community/cli": "20.2.0",
+    "@react-native-community/cli-platform-android": "20.2.0",
+    "@react-native-community/cli-platform-ios": "20.2.0",
+    "@react-native/babel-preset": "0.86.0",
+    "@react-native/metro-config": "0.86.0",
+    "@react-native/typescript-config": "0.86.0",
+    "@types/jest": "^29.5.13",
     "@types/react": "~19.2.3",
     "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=22.11.0"
   }
 }

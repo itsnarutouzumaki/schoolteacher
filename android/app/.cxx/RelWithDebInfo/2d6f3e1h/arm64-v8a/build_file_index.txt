@@ -1,0 +1,6 @@
+F:\school App\teacher\node_modules\react-native-document-scanner-plugin\android\build\generated\source\codegen\jni\CMakeLists.txt
+F:\school App\teacher\node_modules\react-native-html-to-pdf\android\build\generated\source\codegen\jni\CMakeLists.txt
+F:\school App\teacher\node_modules\react-native-image-crop-picker\android\build\generated\source\codegen\jni\CMakeLists.txt
+F:\school App\teacher\node_modules\react-native-safe-area-context\android\src\main\jni\CMakeLists.txt
+F:\school App\teacher\node_modules\react-native-share\android\build\generated\source\codegen\jni\CMakeLists.txt
+F:\school App\teacher\node_modules\react-native\ReactAndroid\cmake-utils\default-app-setup\CMakeLists.txt

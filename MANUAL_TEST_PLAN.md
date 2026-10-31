@@ -25,8 +25,8 @@ Use fictional sample data only. Current flows save locally in the running app an
 1. Home > Enter Test Results. Class, Section and Subject are dropdowns; Test Name is typed. Try advancing with any missing field.
 2. Enter valid marks, then enter obtained marks larger than total or a zero total. Expect validation to prevent progress.
 3. Go back and forward among students; verify each student’s own draft marks/remarks remain associated with their unique ID.
-4. Open Scan Answer Copy. Confirm camera permission is requested before launching the native scanner. On a native development build, test multiple page scanning, detected/cropped page edges and no hard-coded page limit (within device limitations). Deny permission and verify the app explains the requirement and does not claim a scan succeeded. Cancel scanning and choose fallback camera if needed.
-5. Use the in-app camera fallback: capture multiple pages without leaving the camera; verify thumbnails add automatically. Delete a page and verify it disappears.
+4. Open Scan Answer Copy. On a native build, test multiple page scanning, detected/cropped page edges and no hard-coded page limit (within device limitations). Cancel scanning and choose the manual camera fallback if needed.
+5. Use the manual camera fallback: capture multiple pages through the native camera UI; verify thumbnails add automatically. Delete a page and verify it disappears.
 6. Generate PDF preview and scroll from first page to last. Try Retry and confirm all captured pages and generated PDF are cleared before a new scan.
 7. Submit PDF to the student draft; verify the local file URI/page count is attached without any server upload.
 8. Complete the marks for every student, inspect Result Review, and submit. Open Previous Results > the new record; confirm average, maximum, highest, lowest, distribution chart, list sort by roll or marks, student detail, and answer-copy share/open behavior.
@@ -36,4 +36,4 @@ Use fictional sample data only. Current flows save locally in the running app an
 1. Edit profile with valid/invalid name, email, mobile and experience values. Save should only update the local demo session.
 2. Change Password with empty values, short password, mismatch, and a valid-looking set. Even the valid-looking set must clearly say the real password did not change.
 3. Generate a PDF and use Share/Save. Confirm the OS share sheet is available, then cancel it. Confirm temporary print/page images are cleaned after attach/retry as expected.
-4. Change the school name/theme/content in `src/data/school-config.json`; run `npm run config:apply`, `npm run config:check`, and verify branding. Icon/splash files need explicit asset replacement when white-labeling.
+4. Change school name/theme/content in `../shared/school-config.json`; app display identifiers remain in `src/data/app-config.json`. Run `npm run config:apply`, `npm run config:check`, and verify native app branding.

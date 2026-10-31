@@ -52,7 +52,7 @@ export default function AttendanceCaptureScreen() {
           <View style={styles.idBlock}><AppText color="#71809A" size={10}>{t('uniqueId')}</AppText><AppText size={12} weight="bold" color={C.primary}>{student.studentId}</AppText></View>
         </View>
       </Card>
-      {status !== 'unmarked' ? <View style={styles.statusNotice}><Pill label={status === 'present' ? t('presentStatus') : t('absentStatus')} tone={status === 'present' ? 'green' : 'red'}/><AppText size={11} color="#687892">{t('status')}</AppText></View> : null}
+      {status !== 'unmarked' ? <View style={styles.statusNotice}><Pill label={status === 'present' ? t('presentStatus') : t('absentStatus')} tone={status === 'present' ? 'green' : 'red'}/><AppText size={11} color={C.muted}>{t('status')}</AppText></View> : null}
       <View style={styles.buttons}><Button title={t('present')} icon="✓" variant="success" onPress={() => setStatus('present')} style={styles.markButton}/><Button title={t('absent')} icon="×" variant="danger" onPress={() => setStatus('absent')} style={styles.markButton}/></View>
       <AppText size={10} color="#9AA5B7" align="center">{t('swipeInstruction')}</AppText>
       <Button title={t('attendanceReview')} variant="outline" onPress={() => navigate('AttendanceReview')} />

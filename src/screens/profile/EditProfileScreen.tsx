@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import {Image,View} from 'react-native';
-import * as ImagePicker from 'expo-image-picker';
+import ImageCropPicker from 'react-native-image-crop-picker';
 import {useApp} from '../../app-context';
 import {useI18n} from '../../i18n/I18nContext';
 import {AppText,Button,Card,Field} from '../../components/UI';
@@ -12,7 +12,7 @@ export default function EditProfileScreen(){
  const [draft,setDraft]=useState({...teacher});const [qualificationsText,setQualificationsText]=useState(teacher.qualifications.map(q=>`${q.degree} | ${q.institution} | ${q.year}`).join('\n'));const [classesText,setClassesText]=useState(teacher.classes.join(', '));const [subjectsText,setSubjectsText]=useState(teacher.subjects.join(', '));const [languagesText,setLanguagesText]=useState(teacher.languages.join(', '));const [awardsText,setAwardsText]=useState(teacher.awards.join('\n'));
  useEffect(()=>{setDraft({...teacher});setQualificationsText(teacher.qualifications.map(q=>`${q.degree} | ${q.institution} | ${q.year}`).join('\n'));setClassesText(teacher.classes.join(', '));setSubjectsText(teacher.subjects.join(', '));setLanguagesText(teacher.languages.join(', '));setAwardsText(teacher.awards.join('\n'));},[teacher]);
  const change=(key:keyof typeof draft,value:string)=>setDraft(previous=>({...previous,[key]:value} as typeof previous));
- const selectPhoto=async()=>{try{const result=await ImagePicker.launchImageLibraryAsync({mediaTypes:['images'],allowsEditing:true,aspect:[1,1],quality:0.9});if(!result.canceled&&result.assets[0]?.uri)setDraft(previous=>({...previous,photoUrl:result.assets[0].uri}));}catch(error){showToast({title:t('error'),message:error instanceof Error?error.message:undefined,tone:'error'});}};
+ const selectPhoto=async()=>{try{const result=await ImageCropPicker.openPicker({mediaType:'photo',cropping:true,width:512,height:512,compressImageQuality:0.9});setDraft(previous=>({...previous,photoUrl:result.path}));}catch(error){if(typeof error==='object'&&error!==null&&'code' in error&&error.code==='E_PICKER_CANCELLED')return;showToast({title:t('error'),message:error instanceof Error?error.message:undefined,tone:'error'});}};
  const save=()=>{const error=validateTeacherProfile(draft);if(error){showToast({title:t('error'),message:t(error as any),tone:'error'});return;}const qualifications=qualificationsText.split('\n').map(line=>line.split('|').map(v=>v.trim())).filter(parts=>parts[0]).map(parts=>({degree:parts[0],institution:parts[1]||'',year:parts[2]||''}));setTeacher({...draft,qualifications,classes:classesText.split(',').map(s=>s.trim()).filter(Boolean),subjects:subjectsText.split(',').map(s=>s.trim()).filter(Boolean),languages:languagesText.split(',').map(s=>s.trim()).filter(Boolean),awards:awardsText.split('\n').map(s=>s.trim()).filter(Boolean),experienceYears:Number(draft.experienceYears)});showToast({title:t('profileUpdated'),message:t('localDemoSaved'),tone:'success'});};
  return <Screen title={t('editProfile')}>
   <DemoBanner/>

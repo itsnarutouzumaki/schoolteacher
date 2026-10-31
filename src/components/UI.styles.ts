@@ -7,5 +7,11 @@ export const uiStyles = StyleSheet.create({
   avatar:{ backgroundColor:C.blueSoft, alignItems:'center', justifyContent:'center', overflow:'hidden' }, avatarText:{ color:C.primary, fontWeight:'800' }, pill:{ alignSelf:'flex-start', borderRadius:999, paddingHorizontal:9, paddingVertical:4 },
   modalBackdrop:{ flex:1, backgroundColor:'rgba(15,30,54,0.48)', justifyContent:'center', padding:24 }, backdropTouch: StyleSheet.absoluteFill, optionSheet:{ backgroundColor:C.surface, borderRadius:20, padding:18, maxHeight:'78%', gap:13 }, optionList:{ flexGrow:0 }, option:{ minHeight:48, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingHorizontal:6, borderBottomWidth:1, borderBottomColor:C.border },
   toast:{ position:'absolute', left:16, right:16, bottom:76, padding:14, borderRadius:13, zIndex:100, elevation:10, gap:2 }, dialog:{ backgroundColor:C.surface, borderRadius:20, padding:20, gap:8 }, dialogBody:{ lineHeight:21 }, dialogActions:{ flexDirection:'row', gap:9, marginTop:12 }, dialogButton:{ flex:1 },
+  bellIcon:{ width:22,height:22 },
+  bellTop:{ position:'absolute',top:1,left:9,width:4,height:4,borderWidth:1.6,borderBottomWidth:0,borderTopLeftRadius:3,borderTopRightRadius:3,backgroundColor:'transparent' },
+  bellBody:{ position:'absolute',top:4,left:5,width:12,height:13,borderWidth:1.7,borderBottomWidth:0,borderTopLeftRadius:7,borderTopRightRadius:7,backgroundColor:'transparent' },
+  bellRim:{ position:'absolute',top:16,left:2,width:18,height:1.7,borderRadius:1 },
+  bellClapper:{ position:'absolute',top:18,left:9,width:4,height:3,borderBottomLeftRadius:2,borderBottomRightRadius:2 },
+  notificationIndicator:{ position:'absolute',top:0,right:-1,width:7,height:7,borderRadius:4,backgroundColor:C.danger,borderWidth:1,borderColor:C.surface },
   tabs:{ minHeight:62, backgroundColor:C.surface, borderTopWidth:1, borderTopColor:C.border, flexDirection:'row', alignItems:'center', justifyContent:'space-around', paddingBottom:4 }, tab:{ flex:1, alignItems:'center', justifyContent:'center', gap:1 }, tabIcon:{ fontSize:22, lineHeight:25 }, tabLabel:{ fontSize:10 },
 });

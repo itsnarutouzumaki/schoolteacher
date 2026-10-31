@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Image, View } from 'react-native';
+import { View } from 'react-native';
 import { useApp } from '../../app-context';
 import { useI18n } from '../../i18n/I18nContext';
 import { Button, Card, Field, AppText } from '../../components/UI';
 import { Screen } from '../../components/Screen';
+import { SchoolLogo } from '../../components/SchoolLogo';
 import { validateLogin } from '../../validation/forms';
-import config from '../../data/school-config.json';
+import { getSchoolConfiguration } from '../../config/schoolConfig';
 import { styles } from './LoginScreen.styles';
 
 export default function LoginScreen() {
@@ -14,6 +15,7 @@ export default function LoginScreen() {
   const [mobile, setMobile] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const school = getSchoolConfiguration().school;
   const messageKey = validateLogin(mobile, password);
   const tryLogin = () => {
     if (messageKey) { showToast({ title: t('error'), message: t(messageKey as any), tone: 'error' }); return; }
@@ -21,9 +23,9 @@ export default function LoginScreen() {
   };
   return <Screen scroll={true} back={false}>
     <View style={styles.hero}>
-      <Image source={require('../../../assets/icon.png')} style={styles.logo} />
-      <AppText size={23} color="#FFFFFF" weight="bold" align="center">{config.school.name}</AppText>
-      <AppText color="#DCEBFF" align="center" size={12}>{config.school.tagline}</AppText>
+      <SchoolLogo size={88} style={styles.logo} />
+      <AppText size={23} color="#FFFFFF" weight="bold" align="center">{school.name}</AppText>
+      <AppText color="#DCEBFF" align="center" size={12}>{school.tagline}</AppText>
       <AppText color="#FFFFFF" weight="semibold" align="center" size={16} style={styles.portalLabel}>{t('teacherPortal')}</AppText>
     </View>
     <Card style={styles.loginCard}>

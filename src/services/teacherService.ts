@@ -1,7 +1,9 @@
 import { mockTeacherRepository } from './mockTeacherRepository';
-import type { AttendanceDraft, AttendanceStatus, ClassSection, ResultDraft, ResultEntry, SavedResult, Student } from '../types';
+import { getSchoolConfiguration } from '../config/schoolConfig';
+import type { AttendanceDraft, AttendanceStatus, ClassSection, ExamType, ResultDraft, ResultEntry, SavedResult, Student } from '../types';
 
 export const school = mockTeacherRepository.school;
+const academic = getSchoolConfiguration().academic;
 export const teacherSeed = mockTeacherRepository.teacher;
 export const classSections: ClassSection[] = mockTeacherRepository.classes;
 export const studentsByClass: Record<string, Student[]> = mockTeacherRepository.studentsByClass;
@@ -12,8 +14,8 @@ export const seedPreviousResults: SavedResult[] = mockTeacherRepository.previous
 export const helpTopics = mockTeacherRepository.helpTopics;
 export const termsSections = mockTeacherRepository.termsSections;
 export const privacySections = mockTeacherRepository.privacySections;
-export const defaultAcademicYear = mockTeacherRepository.config.app.defaultAcademicYear;
-export const availableAcademicYears: string[] = mockTeacherRepository.config.app.availableAcademicYears;
+export const defaultAcademicYear = academic.defaultAcademicYear;
+export const availableAcademicYears: string[] = academic.availableAcademicYears;
 export function getStudents(className: string, section: string): Student[] { return mockTeacherRepository.getStudents(className, section); }
 export function getClassSections(className?: string) { return mockTeacherRepository.getClassSections(className); }
 export function getSubjects(className: string) { return mockTeacherRepository.getSubjects(className); }
@@ -29,11 +31,11 @@ export function makeAttendanceDraft(className: string, section: string): Attenda
   students.forEach(student => { statuses[student.id] = 'unmarked'; });
   return { className, section, date: localIsoDate(), students, statuses, currentIndex: 0 };
 }
-export function makeResultDraft(className: string, section: string, subject: string, testName: string): ResultDraft {
+export function makeResultDraft(className: string, section: string, subject: string, testName: string, examType: ExamType = 'test'): ResultDraft {
   const students = getStudents(className, section);
   const entries: Record<string, ResultEntry> = {};
   students.forEach(student => { entries[student.id] = { studentId: student.id, rollNumber: student.rollNumber, studentName: student.fullName, fatherName: student.fatherName, uniqueId: student.studentId, obtainedMarks: '', totalMarks: '', remarks: '', answerCopyUri: null, answerCopyPageCount: 0 }; });
-  return { id: `demo-${Date.now()}`, className, section, subject, testName: testName.trim(), date: localIsoDate(), academicYear: mockTeacherRepository.config.app.defaultAcademicYear, students, entries, currentIndex: 0 };
+  return { id: `demo-${Date.now()}`, className, section, subject, examType, testName: testName.trim(), date: localIsoDate(), academicYear: defaultAcademicYear, students, entries, currentIndex: 0 };
 }
 export function validateResultEntry(entry: ResultEntry): { valid: boolean; reason?: 'totalRequired'|'obtainedRequired'|'totalMustPositive'|'marksInvalid' } {
   if (entry.totalMarks.trim() === '') return { valid: false, reason: 'totalRequired' };
@@ -52,7 +54,7 @@ export function draftToSavedResult(draft: ResultDraft): SavedResult {
     return { ...entry, obtainedMarks: Number(entry.obtainedMarks), totalMarks: Number(entry.totalMarks) };
   });
   const maxMarks = entries.reduce((max, item) => Math.max(max, item.totalMarks), 0);
-  return { id: draft.id, className: draft.className, section: draft.section, subject: draft.subject, testName: draft.testName, date: draft.date, academicYear: draft.academicYear, teacherId: teacherSeed.id, totalStudents: entries.length, maxMarks, entries, submittedAt: new Date().toISOString(), isDemoSeed: false };
+  return { id: draft.id, className: draft.className, section: draft.section, subject: draft.subject, examType: draft.examType, testName: draft.testName, date: draft.date, academicYear: draft.academicYear, teacherId: teacherSeed.id, totalStudents: entries.length, maxMarks, entries, submittedAt: new Date().toISOString(), isDemoSeed: false };
 }
 export function resultStatistics(result: SavedResult) {
   const scores = result.entries.map(item => item.obtainedMarks);

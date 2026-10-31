@@ -1,7 +1,7 @@
 export type ScreenName =
   | 'Login' | 'ForgotPassword' | 'Home' | 'SchoolDetails'
   | 'AttendanceSetup' | 'AttendanceCapture' | 'AttendanceReview' | 'AttendanceSuccess'
-  | 'ResultSetup' | 'ResultEntry' | 'Scanner' | 'PdfPreview' | 'ResultReview' | 'ResultSuccess'
+  | 'ResultSetup' | 'ResultEntry' | 'Scanner' | 'CapturedPagesReview' | 'PdfPreview' | 'ResultReview' | 'ResultSuccess'
   | 'PreviousResults' | 'ResultDashboard' | 'StudentResultDetail'
   | 'Notifications' | 'MyProfile' | 'EditProfile' | 'ChangePassword'
   | 'HelpSupport' | 'Terms' | 'Privacy' | 'Teachers' | 'TeacherDetail';
@@ -10,7 +10,7 @@ export type Route = { name: ScreenName; params?: Record<string, unknown> };
 export type ToastTone = 'success' | 'error' | 'info' | 'warning';
 export type ToastMessage = { id: number; title: string; message?: string; tone: ToastTone };
 export type Language = 'en' | 'hi';
-export type ScanPage = { id: string; uri: string; width?: number; height?: number };
+export type ScanPage = { id: string; uri: string; width?: number; height?: number; optimizationFailed?: boolean };
 export type AttendanceStatus = 'present' | 'absent' | 'unmarked';
 
 export type Student = {
@@ -55,6 +55,7 @@ export type AttendanceDraft = {
   statuses: Record<string, AttendanceStatus>;
   currentIndex: number;
 };
+export type ExamType = 'yearly' | 'halfYearly' | 'preBoard' | 'test';
 export type ResultEntry = {
   studentId: string;
   rollNumber: number;
@@ -72,6 +73,7 @@ export type ResultDraft = {
   className: string;
   section: string;
   subject: string;
+  examType: ExamType;
   testName: string;
   date: string;
   academicYear: string;
@@ -84,6 +86,7 @@ export type SavedResult = {
   className: string;
   section: string;
   subject: string;
+  examType?: ExamType;
   testName: string;
   date: string;
   academicYear: string;
@@ -105,5 +108,5 @@ export type SavedResult = {
   submittedAt: string;
   isDemoSeed: boolean;
 };
-export type TeacherNotice = { id: string; type: string; title: string; message: string; dateLabel: string; titleHi?: string; messageHi?: string; dateLabelHi?: string; titleKey?: string; messageKey?: string; messageVars?: Record<string, string | number>; dateKey?: string; read: boolean };
+export type TeacherNotice = { id: string; type: string; title: string; message: string; dateLabel: string; titleHi?: string; messageHi?: string; dateLabelHi?: string; titleKey?: string; messageKey?: string; messageVars?: Record<string, string | number>; dateKey?: string; read: boolean; source?: 'push' | 'local'; route?: ScreenName; routeParams?: Record<string, unknown> };
 export type HelpTopic = { id: string; q: string; a: string };

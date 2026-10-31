@@ -1,3 +1,4 @@
+import { C } from '../../theme';
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { useApp } from '../../app-context';
@@ -34,6 +35,6 @@ export default function AttendanceSetupScreen() {
       <View style={styles.todayPanel}><View style={styles.calendarIcon}><AppText size={22} color="#FFFFFF">▦</AppText></View><View style={styles.todayText}><AppText size={11} color="#62718A">{t('currentDate')}</AppText><AppText weight="bold">{today}</AppText><AppText size={10} color="#62718A">{t('noAcademicYearDate')}</AppText></View></View>
       <Button title={t('startAttendance')} onPress={start} />
     </Card>
-    <Card style={styles.note}><AppText weight="bold" size={12}>{t('demoOnly')}</AppText><AppText color="#687892" size={11}>{t('demoLocalOnly')}</AppText></Card>
+    <Card style={styles.note}><AppText weight="bold" size={12}>{t('demoOnly')}</AppText><AppText color={C.muted} size={11}>{t('demoLocalOnly')}</AppText></Card>
   </Screen>;
 }

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Greenwood Teacher</string>
+    <string name="default_notification_channel_id">teacher_updates</string>
+</resources>

@@ -1,0 +1,4 @@
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

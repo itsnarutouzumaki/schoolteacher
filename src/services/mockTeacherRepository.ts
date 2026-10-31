@@ -1,4 +1,4 @@
-import schoolConfig from '../data/school-config.json';
+import { getSchoolConfiguration } from '../config/schoolConfig';
 import mock from '../data/teacher-mock-data.json';
 import type { ClassSection, SavedResult, Student, TeacherNotice, TeacherProfile } from '../types';
 
@@ -18,12 +18,15 @@ type MockData = {
 };
 
 const data = mock as unknown as MockData;
+const schoolConfig = getSchoolConfiguration();
 const classKey = (className: string, section: string) => `${className}|${section}`;
 
 /** Read-only demo adapter. Replace this adapter with a real repository when backend APIs exist. */
 export const mockTeacherRepository = {
-  config: schoolConfig,
-  school: schoolConfig.school,
+  school: {
+    ...schoolConfig.school,
+    heroPhotoUrl: schoolConfig.media.coverImages[0],
+  },
   teacher: data.teacher,
   teachers: data.teachers,
   classes: data.classes,
