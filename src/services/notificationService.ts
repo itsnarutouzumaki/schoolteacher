@@ -31,9 +31,10 @@ import {
 
 export const TEACHER_NOTIFICATION_CHANNEL_ID = 'teacher_updates';
 const notificationSound = 'teacher_notification';
+let backgroundHandlersRegistered = false;
 
 export function isFirebaseMessagingConfigured(): boolean {
-  return getApps().length > 0;
+  return getApps().some(app => app.name === '[DEFAULT]');
 }
 
 export async function createTeacherNotificationChannel(): Promise<void> {
@@ -88,6 +89,7 @@ export async function displayTeacherNotification(
     message: notification.message,
     type: notification.type,
     source: notification.source ?? 'push',
+    dateLabel: notification.dateLabel,
     route: notification.route ?? 'Notifications',
   };
   if (notification.routeParams) {
@@ -113,7 +115,11 @@ export async function displayTeacherNotification(
 function notificationFromData(data: Record<string, unknown> | undefined): TeacherNotice | null {
   if (!data) return null;
   const notification = normalizeRemoteNotification({ data });
-  return data.source === 'local' ? { ...notification, source: 'local' } : notification;
+  return {
+    ...notification,
+    dateLabel: typeof data.dateLabel === 'string' ? data.dateLabel : notification.dateLabel,
+    source: data.source === 'local' ? 'local' : 'push',
+  };
 }
 
 async function saveBackgroundMessage(message: RemoteMessage): Promise<void> {
@@ -125,6 +131,8 @@ async function saveBackgroundMessage(message: RemoteMessage): Promise<void> {
 }
 
 export function registerNotificationBackgroundHandlers(): void {
+  if (backgroundHandlersRegistered) return;
+  backgroundHandlersRegistered = true;
   notifee.onBackgroundEvent(async ({ type, detail }) => {
     if (type !== EventType.PRESS) return;
     const notification = notificationFromData(detail.notification?.data);
@@ -148,7 +156,10 @@ export function subscribeToNotificationEvents(handlers: {
   const openOnce = (notification: TeacherNotice) => {
     if (openedIds.has(notification.id)) return;
     openedIds.add(notification.id);
-    if (openedIds.size > 100) openedIds.delete(openedIds.values().next().value as string);
+    if (openedIds.size > 100) {
+      const oldest = openedIds.values().next().value;
+      if (oldest) openedIds.delete(oldest);
+    }
     Promise.resolve(handlers.onOpen(notification)).catch(error => {
       console.error('Unable to handle a notification interaction.', error);
     });

@@ -5,14 +5,16 @@ import { useI18n } from '../../i18n/I18nContext';
 import { AppText, Button, Card } from '../../components/UI';
 import { Screen } from '../../components/Screen';
 import { cleanupLocalFiles, createAnswerCopyPdf } from '../../services/pdfService';
-import { removeScanPage } from '../../services/documentScannerService';
+import { appendScanPages, captureDocumentPages, removeScanPage } from '../../services/documentScannerService';
 import { styles } from './CapturedPagesReviewScreen.styles';
 
 export default function CapturedPagesReviewScreen() {
-  const { scanPages, setScanPages, setPendingPdfUri, resultDraft, currentRoute, goBack, navigate, showToast } = useApp();
+  const { scanPages, setScanPages, pendingPdfUri, setPendingPdfUri, resultDraft, currentRoute, navigate, showToast } = useApp();
   const { t } = useI18n();
   const [generating, setGenerating] = useState(false);
   const generationInFlight = useRef(false);
+  const [capturingMore, setCapturingMore] = useState(false);
+  const captureInFlight = useRef(false);
   const routeStudentId = typeof currentRoute.params?.studentId === 'string' ? currentRoute.params.studentId : undefined;
   const currentStudent = resultDraft?.students.find(student => student.id === routeStudentId) || resultDraft?.students[resultDraft.currentIndex];
 
@@ -22,8 +24,28 @@ export default function CapturedPagesReviewScreen() {
     if (page) await cleanupLocalFiles([page.uri]);
   };
 
+  const addMorePages = async () => {
+    if (captureInFlight.current || generationInFlight.current) return;
+    captureInFlight.current = true;
+    setCapturingMore(true);
+    try {
+      const result = await captureDocumentPages();
+      if (result.pages.length) {
+        setScanPages(previous => appendScanPages(previous, result.pages));
+        if (result.optimizationFailures) showToast({ title:t('imageProcessingWarning'), message:t('capturedImageKept'), tone:'warning' });
+      } else {
+        showToast({ title:t('scanCancelled'), message:t('scanCancelledBody'), tone:'info' });
+      }
+    } catch (error) {
+      showToast({ title:t('nativeScannerUnavailable'), message:error instanceof Error ? error.message : t('scanFailed'), tone:'error' });
+    } finally {
+      captureInFlight.current = false;
+      setCapturingMore(false);
+    }
+  };
+
   const proceed = async () => {
-    if (!scanPages.length || generationInFlight.current) {
+    if (!scanPages.length || generationInFlight.current || captureInFlight.current) {
       if (!scanPages.length) showToast({ title: t('error'), message: t('noPages'), tone: 'error' });
       return;
     }
@@ -32,6 +54,7 @@ export default function CapturedPagesReviewScreen() {
     try {
       const title = `${resultDraft?.testName || 'Test'} - ${currentStudent?.fullName || 'Answer Copy'}`;
       const uri = await createAnswerCopyPdf(scanPages, title);
+      if (pendingPdfUri && pendingPdfUri !== uri) await cleanupLocalFiles([pendingPdfUri]);
       setPendingPdfUri(uri);
       navigate('PdfPreview', { title, studentId: currentStudent?.id });
     } catch (error) {
@@ -47,14 +70,14 @@ export default function CapturedPagesReviewScreen() {
       <Card key={page.id} style={styles.pageCard}>
         <View style={styles.pageHeader}>
           <AppText size={13} weight="bold" style={styles.pageNumber}>{t('page')} {index + 1}</AppText>
-          <Button title={t('deletePage')} variant="danger" compact disabled={generating} onPress={() => { void deletePage(page.id); }} style={styles.deleteButton} />
+          <Button title={t('deletePage')} variant="danger" compact disabled={generating || capturingMore} onPress={() => { void deletePage(page.id); }} style={styles.deleteButton} />
         </View>
         <Image source={{ uri: page.uri }} resizeMode="contain" style={styles.pageImage} />
       </Card>
     )) : <Card style={styles.emptyPages}><AppText size={12} color="#71809A">{t('noPages')}</AppText></Card>}
     <View style={styles.actions}>
-      <Button title={t('addMorePages')} variant="outline" disabled={generating} onPress={goBack} />
-      <Button title={generating ? t('processingPdf') : t('proceedToPdf')} disabled={generating || !scanPages.length} onPress={() => { void proceed(); }} />
+      <Button title={capturingMore ? t('openingScanner') : t('addMorePages')} variant="outline" disabled={generating || capturingMore} onPress={() => { void addMorePages(); }} />
+      <Button title={generating ? t('processingPdf') : t('proceedToPdf')} disabled={generating || capturingMore || !scanPages.length} onPress={() => { void proceed(); }} />
     </View>
   </Screen>;
 }

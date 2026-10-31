@@ -22,8 +22,12 @@ for (const name of ['android', 'ios']) {
 const androidBuild = read('android/app/build.gradle');
 const androidManifest = read('android/app/src/main/AndroidManifest.xml');
 const androidStrings = read('android/app/src/main/res/values/strings.xml');
+const androidNotificationSound = path.join(root, 'android/app/src/main/res/raw/teacher_notification.wav');
+const androidNotificationIcon = path.join(root, 'android/app/src/main/res/drawable/ic_stat_notification.xml');
 const iosProject = read('ios/GreenwoodTeacher.xcodeproj/project.pbxproj');
 const iosPlist = read('ios/GreenwoodTeacher/Info.plist');
+const iosEntitlements = read('ios/GreenwoodTeacher/GreenwoodTeacher.entitlements');
+const iosNotificationSound = path.join(root, 'ios/GreenwoodTeacher/teacher_notification.wav');
 const index = read('index.js');
 const iosIcons = JSON.parse(read('ios/GreenwoodTeacher/Images.xcassets/AppIcon.appiconset/Contents.json'));
 const kotlinPackages = [];
@@ -41,10 +45,16 @@ if (!androidBuild.includes(`applicationId "${appConfig.androidPackage}"`)) error
 if (!androidBuild.includes(`namespace "${appConfig.androidPackage}"`)) errors.push('Android namespace is out of sync with app-config.json.');
 if (!kotlinPackages.length || kotlinPackages.some(packageName => packageName !== appConfig.androidPackage)) errors.push('Android source packages are out of sync with app-config.json.');
 if (!androidManifest.includes('android.permission.CAMERA')) errors.push('Android camera permission is missing.');
+if (!androidManifest.includes('android.permission.POST_NOTIFICATIONS')) errors.push('Android notification permission is missing.');
+if (!androidManifest.includes('default_notification_channel_id') || !androidStrings.includes('teacher_updates')) errors.push('Android default notification channel is missing.');
+if (!androidManifest.includes('ic_stat_notification') || !fs.existsSync(androidNotificationIcon)) errors.push('Android notification status icon is missing.');
+if (!fs.existsSync(androidNotificationSound)) errors.push('Android custom notification sound is missing.');
 if (!androidStrings.includes(`<string name="app_name">${appConfig.appName}</string>`)) errors.push('Android app label is out of sync with app-config.json.');
 if (!iosProject.includes(`PRODUCT_BUNDLE_IDENTIFIER = ${appConfig.iosBundleIdentifier};`)) errors.push('iOS bundle identifier is out of sync with app-config.json.');
 if (!iosPlist.includes(`<string>${appConfig.appName}</string>`)) errors.push('iOS display name is out of sync with app-config.json.');
 if (!iosPlist.includes('NSCameraUsageDescription') || !iosPlist.includes('NSPhotoLibraryUsageDescription')) errors.push('iOS camera/photo permissions are missing.');
+if (!iosPlist.includes('remote-notification') || !iosEntitlements.includes('aps-environment')) errors.push('iOS remote notification background mode or APNs entitlement is missing.');
+if (!iosProject.includes('teacher_notification.wav in Resources') || !fs.existsSync(iosNotificationSound)) errors.push('iOS custom notification sound is missing from the app resources.');
 if (!index.includes('AppRegistry.registerComponent(appName, () => App)')) errors.push('React Native CLI app registration is missing.');
 if (!shared.schoolId || !shared.school?.name || !shared.theme?.light) errors.push('The shared school configuration is incomplete.');
 for (const icon of iosIcons.images) {

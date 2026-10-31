@@ -44,6 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/armeabi-v7a/AsyncStorageSpec_autolinked_build/cmake_install.cmake")
+  include("F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/armeabi-v7a/RNFBAppTurboModules_autolinked_build/cmake_install.cmake")
+  include("F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/armeabi-v7a/RNFBMessagingTurboModules_autolinked_build/cmake_install.cmake")
   include("F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/armeabi-v7a/DocumentScannerSpec_autolinked_build/cmake_install.cmake")
   include("F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/armeabi-v7a/HtmlToPdfSpec_autolinked_build/cmake_install.cmake")
   include("F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/armeabi-v7a/RNCImageCropPickerSpec_autolinked_build/cmake_install.cmake")

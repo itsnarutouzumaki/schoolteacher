@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Image, View } from 'react-native';
 import { useApp } from '../../app-context';
 import { useI18n } from '../../i18n/I18nContext';
@@ -7,6 +7,7 @@ import { Screen, DemoBanner } from '../../components/Screen';
 import { validateMarks } from '../../validation/forms';
 import { styles } from './ResultEntryScreen.styles';
 import { cleanupLocalFiles } from '../../services/pdfService';
+import { appendScanPages, captureDocumentPages } from '../../services/documentScannerService';
 import type { ResultEntry as ResultEntryType } from '../../types';
 
 export default function ResultEntryScreen() {
@@ -18,6 +19,8 @@ export default function ResultEntryScreen() {
   const [obtained, setObtained] = useState(entry?.obtainedMarks || '');
   const [total, setTotal] = useState(entry?.totalMarks || '');
   const [remarks, setRemarks] = useState(entry?.remarks || '');
+  const [scanning, setScanning] = useState(false);
+  const scanInFlight = useRef(false);
   useEffect(() => { setObtained(entry?.obtainedMarks || ''); setTotal(entry?.totalMarks || ''); setRemarks(entry?.remarks || ''); }, [student?.id, entry?.obtainedMarks, entry?.totalMarks, entry?.remarks]);
   if (!draft || !student || !entry) return <Screen title={t('resultEntry')}><Card><AppText>{t('noData')}</AppText><Button title={t('backToHome')} onPress={()=>navigate('Home')}/></Card></Screen>;
   const updateEntry = (updates: Partial<ResultEntryType>) => setResultDraft(previous => previous ? { ...previous, entries: { ...previous.entries, [student.id]: { ...previous.entries[student.id], ...updates } } } : previous);
@@ -34,14 +37,42 @@ export default function ResultEntryScreen() {
       navigate('ResultReview');
     }
   };
-  const openScanner = () => { void cleanupLocalFiles([...scanPages.map(page=>page.uri),...(pendingPdfUri?[pendingPdfUri]:[])]); setScanPages([]); setPendingPdfUri(null); setResultDraft(previous => previous ? { ...previous, entries: { ...previous.entries, [student.id]: { ...previous.entries[student.id], obtainedMarks: obtained, totalMarks: total, remarks } } } : previous); navigate('Scanner',{studentId:student.id}); };
+  const openScanner = async () => {
+    if (scanInFlight.current) return;
+    scanInFlight.current = true;
+    setScanning(true);
+    setResultDraft(previous => previous ? { ...previous, entries: { ...previous.entries, [student.id]: { ...previous.entries[student.id], obtainedMarks: obtained, totalMarks: total, remarks } } } : previous);
+    try {
+      const result = await captureDocumentPages();
+      if (result.pages.length) {
+        setScanPages(previous => appendScanPages(previous, result.pages));
+        if (pendingPdfUri) {
+          await cleanupLocalFiles([pendingPdfUri]);
+          setPendingPdfUri(null);
+        }
+        navigate('CapturedPagesReview', { studentId: student.id });
+        if (result.optimizationFailures) showToast({ title:t('imageProcessingWarning'), message:t('capturedImageKept'), tone:'warning' });
+        return;
+      }
+      if (scanPages.length) {
+        navigate('CapturedPagesReview', { studentId: student.id });
+      } else {
+        showToast({ title:t('scanCancelled'), message:t('scanCancelledBody'), tone:'info' });
+      }
+    } catch (error) {
+      showToast({ title:t('nativeScannerUnavailable'), message:error instanceof Error ? error.message : t('scanFailed'), tone:'error' });
+    } finally {
+      scanInFlight.current = false;
+      setScanning(false);
+    }
+  };
   return <Screen title={`${draft.className} · ${draft.section}`} subtitle={`${draft.subject} · ${draft.testName}`}>
     <DemoBanner compact />
     <View style={styles.studentHeader}><Image source={{uri:student.photoUrl}} style={styles.photo}/><View style={styles.studentInfo}><AppText size={14} weight="bold">{student.fullName}</AppText><AppText size={11} color="#6F7E95">{t('rollNo')}: {String(student.rollNumber).padStart(2,'0')}</AppText><AppText size={11} color="#6F7E95">{t('fatherName')}: {student.fatherName}</AppText><AppText size={10} color="#6F7E95">{t('uniqueId')}: {student.studentId}</AppText></View><Pill label={`${draft.currentIndex+1}/${draft.students.length}`} tone="blue"/></View>
     <View style={styles.progressTrack}><View style={[styles.progressFill,{width:`${((draft.currentIndex+1)/draft.students.length)*100}%`}]}/></View>
     <Card style={styles.card}>
       <View style={styles.scanHeader}><AppText size={14} weight="bold">{t('answerCopyOptional')}</AppText><Pill label={t('optional')} tone="gray"/></View>
-      {entry.answerCopyUri ? <View style={styles.attachedBox}><View style={styles.fileBadge}><AppText color="#FFFFFF" size={15}>▤</AppText></View><View style={styles.fileCopy}><AppText weight="semibold" size={12}>Answer_Copy_{String(student.rollNumber).padStart(2,'0')}.pdf</AppText><AppText size={10} color="#6F7E95">{entry.answerCopyPageCount} {t('attachedPages')} · local demo file</AppText></View><Button title={t('replaceScan')} variant="outline" compact onPress={openScanner}/></View> : <Button title={t('takeScan')} icon="▣" variant="secondary" onPress={openScanner} />}
+      {entry.answerCopyUri ? <View style={styles.attachedBox}><View style={styles.fileBadge}><AppText color="#FFFFFF" size={15}>▤</AppText></View><View style={styles.fileCopy}><AppText weight="semibold" size={12}>Answer_Copy_{String(student.rollNumber).padStart(2,'0')}.pdf</AppText><AppText size={10} color="#6F7E95">{entry.answerCopyPageCount} {t('attachedPages')} · local demo file</AppText></View><Button title={scanning?t('openingScanner'):t('replaceScan')} variant="outline" compact disabled={scanning} onPress={()=>{void openScanner();}}/></View> : <Button title={scanning?t('openingScanner'):t('takeScan')} icon="▣" variant="secondary" disabled={scanning} onPress={()=>{void openScanner();}} />}
       <View style={styles.marksRow}><View style={styles.markField}><Field label={t('totalMarks')} value={total} onChangeText={value=>{setTotal(value);updateEntry({totalMarks:value});}} keyboardType="number-pad" required placeholder="20"/></View><View style={styles.markField}><Field label={t('obtainedMarks')} value={obtained} onChangeText={value=>{setObtained(value);updateEntry({obtainedMarks:value});}} keyboardType="number-pad" required placeholder="18"/></View></View>
       <Field label={t('remarks')} value={remarks} onChangeText={value=>{setRemarks(value);updateEntry({remarks:value});}} placeholder={t('remarksPlaceholder')} multiline maxLength={200}/>
       <AppText size={10} color="#7D8BA0">{t('remarksMax')}</AppText>

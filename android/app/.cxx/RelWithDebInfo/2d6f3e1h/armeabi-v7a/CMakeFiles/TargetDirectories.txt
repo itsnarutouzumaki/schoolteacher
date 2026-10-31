@@ -1,6 +1,15 @@
 F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/appmodules.dir
 F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/edit_cache.dir
 F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/AsyncStorageSpec_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/AsyncStorageSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/RNFBAppTurboModules_autolinked_build/CMakeFiles/react_codegen_RNFBAppTurboModules.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/RNFBAppTurboModules_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/RNFBAppTurboModules_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/RNFBMessagingTurboModules_autolinked_build/CMakeFiles/react_codegen_RNFBMessagingTurboModules.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/RNFBMessagingTurboModules_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/RNFBMessagingTurboModules_autolinked_build/CMakeFiles/rebuild_cache.dir
 F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/DocumentScannerSpec_autolinked_build/CMakeFiles/react_codegen_DocumentScannerSpec.dir
 F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/DocumentScannerSpec_autolinked_build/CMakeFiles/edit_cache.dir
 F:/school App/teacher/android/app/.cxx/RelWithDebInfo/2d6f3e1h/armeabi-v7a/DocumentScannerSpec_autolinked_build/CMakeFiles/rebuild_cache.dir

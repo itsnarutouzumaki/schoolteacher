@@ -56,6 +56,8 @@ assert.equal(remoteNotice.title, 'School closed', 'FCM notification subject shou
 assert.equal(remoteNotice.message, 'Classes are cancelled today.', 'FCM body should be retained');
 assert.equal(remoteNotice.route, 'Home');
 assert.equal(notificationService.notificationRoute(remoteNotice).params.date, '2026-10-31');
+assert.equal(notificationService.normalizeRemoteNotification({ data: { subject: 'Meeting', message: 'Starts at 10.' } }).title, 'Meeting');
+assert.equal(notificationService.normalizeRemoteNotification({ data: { subject: 'Meeting', message: 'Starts at 10.' } }).message, 'Starts at 10.');
 assert.equal(notificationService.normalizeRemoteNotification({ data: { route: 'Login' } }).route, undefined, 'untrusted payload routes must be rejected');
 assert.equal(notificationService.notificationRoute(remoteNotice).name, 'Home');
 assert.equal(notificationService.notificationRoute({ ...remoteNotice, route: undefined }).name, 'Notifications');

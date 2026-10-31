@@ -1,7 +1,7 @@
 export type ScreenName =
   | 'Login' | 'ForgotPassword' | 'Home' | 'SchoolDetails'
   | 'AttendanceSetup' | 'AttendanceCapture' | 'AttendanceReview' | 'AttendanceSuccess'
-  | 'ResultSetup' | 'ResultEntry' | 'Scanner' | 'CapturedPagesReview' | 'PdfPreview' | 'ResultReview' | 'ResultSuccess'
+  | 'ResultSetup' | 'ResultEntry' | 'CapturedPagesReview' | 'PdfPreview' | 'ResultReview' | 'ResultSuccess'
   | 'PreviousResults' | 'ResultDashboard' | 'StudentResultDetail'
   | 'Notifications' | 'MyProfile' | 'EditProfile' | 'ChangePassword'
   | 'HelpSupport' | 'Terms' | 'Privacy' | 'Teachers' | 'TeacherDetail';

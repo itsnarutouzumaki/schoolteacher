@@ -2,7 +2,8 @@ import React, { createContext, useCallback, useContext, useMemo, useState } from
 import { mockTeacherRepository } from './services/mockTeacherRepository';
 import type { AttendanceDraft, ClassSection, ResultDraft, SavedResult, ScanPage, Student, TeacherNotice, TeacherProfile, ToastMessage } from './types';
 import type { Route, ScreenName } from './types';
-import { loadPushNotifications, mergeLoadedNotifications, savePushNotifications } from './services/notificationStore';
+import { loadPushNotifications, savePushNotifications } from './services/notificationStore';
+import { mergeNotificationRecords } from './services/notificationPayload';
 
 type AppValue = {
   school: typeof mockTeacherRepository.school;
@@ -65,7 +66,7 @@ export function AppProvider({ children, navigation }: { children: React.ReactNod
     loadPushNotifications()
       .then(stored => {
         if (active) {
-          setNotifications(current => mergeLoadedNotifications(current, stored));
+          setNotifications(current => mergeNotificationRecords(current, stored));
           setNotificationsHydrated(true);
         }
       })

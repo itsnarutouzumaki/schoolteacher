@@ -1,6 +1,15 @@
 F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/CMakeFiles/appmodules.dir
 F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/CMakeFiles/edit_cache.dir
 F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/AsyncStorageSpec_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/AsyncStorageSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/RNFBAppTurboModules_autolinked_build/CMakeFiles/react_codegen_RNFBAppTurboModules.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/RNFBAppTurboModules_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/RNFBAppTurboModules_autolinked_build/CMakeFiles/rebuild_cache.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/RNFBMessagingTurboModules_autolinked_build/CMakeFiles/react_codegen_RNFBMessagingTurboModules.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/RNFBMessagingTurboModules_autolinked_build/CMakeFiles/edit_cache.dir
+F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/RNFBMessagingTurboModules_autolinked_build/CMakeFiles/rebuild_cache.dir
 F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/DocumentScannerSpec_autolinked_build/CMakeFiles/react_codegen_DocumentScannerSpec.dir
 F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/DocumentScannerSpec_autolinked_build/CMakeFiles/edit_cache.dir
 F:/school App/teacher/android/app/.cxx/Debug/22e5ns1f/x86/DocumentScannerSpec_autolinked_build/CMakeFiles/rebuild_cache.dir

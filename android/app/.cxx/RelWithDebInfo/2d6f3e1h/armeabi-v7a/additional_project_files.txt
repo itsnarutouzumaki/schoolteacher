@@ -1,3 +1,11 @@
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\AsyncStorageSpec-generated.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\ComponentDescriptors.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\EventEmitters.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\Props.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\ShadowNodes.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\States.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\RNFBAppTurboModules_autolinked_build\CMakeFiles\react_codegen_RNFBAppTurboModules.dir\RNFBAppTurboModules-generated.cpp.o
+F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\RNFBMessagingTurboModules_autolinked_build\CMakeFiles\react_codegen_RNFBMessagingTurboModules.dir\RNFBMessagingTurboModules-generated.cpp.o
 F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\DocumentScannerSpec_autolinked_build\CMakeFiles\react_codegen_DocumentScannerSpec.dir\DocumentScannerSpec-generated.cpp.o
 F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\DocumentScannerSpec_autolinked_build\CMakeFiles\react_codegen_DocumentScannerSpec.dir\react\renderer\components\DocumentScannerSpec\ComponentDescriptors.cpp.o
 F:\school App\teacher\android\app\.cxx\RelWithDebInfo\2d6f3e1h\armeabi-v7a\DocumentScannerSpec_autolinked_build\CMakeFiles\react_codegen_DocumentScannerSpec.dir\react\renderer\components\DocumentScannerSpec\EventEmitters.cpp.o

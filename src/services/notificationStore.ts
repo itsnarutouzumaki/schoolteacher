@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { TeacherNotice } from '../types';
-import { mergeNotificationRecords, upsertNotificationRecord } from './notificationPayload';
+import { upsertNotificationRecord } from './notificationPayload';
 
 const notificationStorageKey = 'greenwood-teacher.push-notifications.v1';
 const pendingNotificationOpenKey = 'greenwood-teacher.pending-notification-open.v1';
@@ -77,11 +77,4 @@ export async function getPendingPushToken(): Promise<string | null> {
 
 export async function clearPendingPushToken(): Promise<void> {
   await AsyncStorage.removeItem(pendingPushTokenKey);
-}
-
-export function mergeLoadedNotifications(
-  current: TeacherNotice[],
-  stored: TeacherNotice[],
-): TeacherNotice[] {
-  return mergeNotificationRecords(current, stored);
 }

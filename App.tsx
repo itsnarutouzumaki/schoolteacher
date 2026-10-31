@@ -17,7 +17,6 @@ import AttendanceReviewScreen from './src/screens/attendance/AttendanceReviewScr
 import SuccessScreen from './src/screens/results/SuccessScreen';
 import ResultSetupScreen from './src/screens/results/ResultSetupScreen';
 import ResultEntryScreen from './src/screens/results/ResultEntryScreen';
-import ScannerScreen from './src/screens/results/ScannerScreen';
 import CapturedPagesReviewScreen from './src/screens/results/CapturedPagesReviewScreen';
 import PdfPreviewScreen from './src/screens/results/PdfPreviewScreen';
 import ResultReviewScreen from './src/screens/results/ResultReviewScreen';
@@ -81,7 +80,8 @@ function TeacherShell() {
     let active = true;
     consumePendingNotificationOpen()
       .then(notification => {
-        if (active && notification) void openNotification(notification);
+        if (active && notification) return openNotification(notification);
+        return undefined;
       })
       .catch(error => console.error('Unable to restore the pending notification action.', error));
     return () => {
@@ -107,7 +107,6 @@ function TeacherShell() {
       case 'AttendanceSuccess': case 'ResultSuccess': return <SuccessScreen />;
       case 'ResultSetup': return <ResultSetupScreen />;
       case 'ResultEntry': return <ResultEntryScreen />;
-      case 'Scanner': return <ScannerScreen />;
       case 'CapturedPagesReview': return <CapturedPagesReviewScreen />;
       case 'PdfPreview': return <PdfPreviewScreen />;
       case 'ResultReview': return <ResultReviewScreen />;
@@ -126,7 +125,7 @@ function TeacherShell() {
       default: return <HomeScreen />;
     }
   };
-  const hideTabs = ['Login','ForgotPassword','Scanner','CapturedPagesReview','PdfPreview'].includes(currentRoute.name);
+  const hideTabs = ['Login','ForgotPassword','CapturedPagesReview','PdfPreview'].includes(currentRoute.name);
   const showTabs = isDemoOpen && !hideTabs;
   const activeTab: 'Home'|'Notifications'|'Profile' = currentRoute.name === 'Notifications' ? 'Notifications' : ['MyProfile','EditProfile','ChangePassword','HelpSupport','Terms','Privacy'].includes(currentRoute.name) ? 'Profile' : 'Home';
   const onTabPress = (tab:'Home'|'Notifications'|'Profile') => { if(tab==='Home')resetTo('Home'); if(tab==='Notifications')resetTo('Notifications'); if(tab==='Profile')resetTo('MyProfile'); };

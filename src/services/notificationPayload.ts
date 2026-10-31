@@ -7,7 +7,7 @@ export type RemoteNotificationMessage = {
   data?: Record<string, unknown> | null;
 };
 
-const notificationRoutes = new Set<ScreenName>([
+const notificationRoutes = new Set<string>([
   'Home',
   'Notifications',
   'SchoolDetails',
@@ -17,7 +17,7 @@ const notificationRoutes = new Set<ScreenName>([
 ]);
 
 function isNotificationRoute(value: string | undefined): value is ScreenName {
-  return value !== undefined && notificationRoutes.has(value as ScreenName);
+  return value !== undefined && notificationRoutes.has(value);
 }
 
 function stringValue(value: unknown): string | undefined {
@@ -25,19 +25,17 @@ function stringValue(value: unknown): string | undefined {
 }
 
 function parseRouteParams(value: unknown): Record<string, unknown> | undefined {
-  if (typeof value !== 'string') {
-    return value !== null && typeof value === 'object' && !Array.isArray(value)
-      ? (value as Record<string, unknown>)
-      : undefined;
-  }
+  if (typeof value !== 'string') return isRecord(value) ? value : undefined;
   try {
     const parsed: unknown = JSON.parse(value);
-    return parsed !== null && typeof parsed === 'object' && !Array.isArray(parsed)
-      ? (parsed as Record<string, unknown>)
-      : undefined;
+    return isRecord(parsed) ? parsed : undefined;
   } catch {
     return undefined;
   }
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
 
 export function normalizeRemoteNotification(
